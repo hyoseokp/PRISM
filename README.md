@@ -236,6 +236,10 @@ PRISM/
 }
 ```
 
+## Independent Validation
+
+- [Block Selection Algorithm Validation](validation/PRISM_Independent_Validation.pdf) — Chris George Zuger, SpiteBench Labs (3,000+ test configurations, recall@10 = 0.884 on clustered data)
+
 ## Related Work
 
 - [Quest](https://arxiv.org/abs/2406.10774) - Query-aware KV cache selection (Tang et al., 2024)
