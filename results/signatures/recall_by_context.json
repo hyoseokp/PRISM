@@ -1,0 +1,111 @@
+{
+  "4096": {
+    "block_128": {
+      "recall@8": {
+        "mean": 0.2333,
+        "std": 0.2183,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 0.5375,
+        "std": 0.2303,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 1.0,
+        "std": 0.0,
+        "n_samples": 15
+      }
+    },
+    "block_256": {
+      "recall@8": {
+        "mean": 0.4667,
+        "std": 0.2303,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 1.0,
+        "std": 0.0,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 0.0,
+        "std": 0.0,
+        "n_samples": 0
+      }
+    }
+  },
+  "8192": {
+    "block_128": {
+      "recall@8": {
+        "mean": 0.2,
+        "std": 0.3089,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 0.3583,
+        "std": 0.2646,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 0.5792,
+        "std": 0.2028,
+        "n_samples": 15
+      }
+    },
+    "block_256": {
+      "recall@8": {
+        "mean": 0.2917,
+        "std": 0.2528,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 0.5583,
+        "std": 0.211,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 1.0,
+        "std": 0.0,
+        "n_samples": 15
+      }
+    }
+  },
+  "16384": {
+    "block_128": {
+      "recall@8": {
+        "mean": 0.1667,
+        "std": 0.222,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 0.2542,
+        "std": 0.279,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 0.3854,
+        "std": 0.2884,
+        "n_samples": 15
+      }
+    },
+    "block_256": {
+      "recall@8": {
+        "mean": 0.2667,
+        "std": 0.2809,
+        "n_samples": 15
+      },
+      "recall@16": {
+        "mean": 0.4167,
+        "std": 0.3184,
+        "n_samples": 15
+      },
+      "recall@32": {
+        "mean": 0.575,
+        "std": 0.252,
+        "n_samples": 15
+      }
+    }
+  },
+  "32768": {}
+}

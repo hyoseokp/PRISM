@@ -1,0 +1,41 @@
+[21:53:53] transformers 4.57.3, kwarg='dtype'
+[21:53:53] torch 2.10.0+cu128
+[21:53:53] Loading Qwen/Qwen2.5-7B with SDPA...
+[21:54:03] Arch: 28L, 28AH, 4KVH, G=7, hd=128
+[21:54:03] max_position_embeddings: 131072
+[21:54:03] VRAM after load: 15.2 GB
+[21:54:03] Probing attention extraction...
+[21:54:04]   [B] config patch works
+[21:54:04] Using approach: config_patch
+[21:54:04] 
+============================================================
+[21:54:04] Context: 262,144 (256K)
+[21:54:04] ============================================================
+[21:54:04]   Estimated KV cache: 15.0 GB, model: 15.2 GB, total: 30.3 GB
+[21:54:04]   Text 1/2: generating 262,144 tokens...
+[21:54:04]     Chunked prefill (262,143 tokens, chunk=2048)...
+[21:54:52]     chunk 50/127, VRAM=21.2GB
+[21:56:56]     chunk 100/127, VRAM=27.1GB
+[21:58:37]     Prefill done: 273.5s, VRAM=30.3GB
+[21:58:38]     Text 1: pre=273.5s s2=0.2s VRAM=36.8GB
+[21:58:38]   Text 2/2: generating 262,144 tokens...
+[21:58:38]     Chunked prefill (262,143 tokens, chunk=2048)...
+[21:59:34]     chunk 50/127, VRAM=21.3GB
+[22:01:41]     chunk 100/127, VRAM=27.1GB
+[22:03:21]     Prefill done: 283.4s, VRAM=30.3GB
+[22:03:22]     Text 2: pre=283.4s s2=0.2s VRAM=36.8GB
+[22:03:22]   >> R_h(t=0.3): 111/112 (99.1%)
+[22:03:22]   >> Mean R_h: 0.9357, Max: 1.0000
+[22:03:22]   (intermediate save done)
+[22:03:22] 
+============================================================
+[22:03:22] Context: 524,288 (512K)
+[22:03:22] ============================================================
+[22:03:22]   Estimated KV cache: 30.1 GB, model: 15.3 GB, total: 45.3 GB
+[22:03:22]   Text 1/2: generating 524,288 tokens...
+[22:03:22]     Chunked prefill (524,287 tokens, chunk=2048)...
+[22:04:18]     chunk 50/255, VRAM=21.3GB
+[22:06:25]     chunk 100/255, VRAM=27.1GB
+[22:09:47]     chunk 150/255, VRAM=33.0GB
+[22:22:34]     chunk 200/255, VRAM=38.9GB
+[22:46:47]     chunk 250/255, VRAM=44.7GB

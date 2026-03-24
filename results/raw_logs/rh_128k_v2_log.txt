@@ -1,0 +1,47 @@
+STARTED v2 chunked prefill
+[20:48:25] PREFILL_CHUNK=2048
+[20:48:25] --- ctx=2048 ---
+[20:48:30]   Text 1: 2048tok, prefill=0.9s, last=0.1s, VRAM=16.6GB
+[20:48:35]   Text 2: 2048tok, prefill=0.6s, last=0.0s, VRAM=16.6GB
+[20:48:35]   R_h(0.3): 94/112 (83.9%), mean=0.5735, VRAM=16.6GB
+[20:48:35]   (intermediate save done)
+[20:48:35] --- ctx=4096 ---
+[20:48:42]   Text 1: 4096tok, prefill=6.3s, last=0.0s, VRAM=16.6GB
+[20:48:44]   Text 2: 4096tok, prefill=1.9s, last=0.0s, VRAM=16.6GB
+[20:48:44]   R_h(0.3): 93/112 (83.0%), mean=0.5598, VRAM=16.6GB
+[20:48:44]   (intermediate save done)
+[20:48:44] --- ctx=8192 ---
+[20:48:48]   Text 1: 8192tok, prefill=3.5s, last=0.0s, VRAM=16.6GB
+[20:48:52]   Text 2: 8192tok, prefill=3.7s, last=0.0s, VRAM=16.6GB
+[20:48:52]   R_h(0.3): 102/112 (91.1%), mean=0.6265, VRAM=16.6GB
+[20:48:52]   (intermediate save done)
+[20:48:52] --- ctx=16384 ---
+[20:49:00]   Text 1: 16384tok, prefill=7.7s, last=0.0s, VRAM=16.8GB
+[20:49:10]   Text 2: 16384tok, prefill=8.9s, last=0.0s, VRAM=16.8GB
+[20:49:10]   R_h(0.3): 104/112 (92.9%), mean=0.6391, VRAM=16.8GB
+[20:49:10]   (intermediate save done)
+[20:49:10] --- ctx=32768 ---
+[20:49:47]   Text 1: 32768tok, prefill=36.9s, last=0.2s, VRAM=18.0GB
+[20:50:45]   Text 2: 32768tok, prefill=56.7s, last=0.2s, VRAM=18.0GB
+[20:50:46]   R_h(0.3): 107/112 (95.5%), mean=0.6559, VRAM=18.0GB
+[20:50:46]   (intermediate save done)
+[20:50:46] --- ctx=65536 ---
+[20:53:24]   Text 1: 65536tok, prefill=157.9s, last=0.5s, VRAM=20.7GB
+[20:56:26]   Text 2: 65536tok, prefill=179.2s, last=0.6s, VRAM=20.7GB
+[20:56:27]   R_h(0.3): 103/112 (92.0%), mean=0.6325, VRAM=20.7GB
+[20:56:27]   (intermediate save done)
+[20:56:27] --- ctx=131072 ---
+[21:02:23]   Text 1: 79001tok, prefill=352.9s, last=3.3s, VRAM=21.4GB
+[21:03:16]   Text 2: 75002tok, prefill=51.5s, last=0.1s, VRAM=21.4GB
+[21:03:16]   R_h(0.3): 110/112 (98.2%), mean=0.7955, VRAM=21.4GB
+[21:03:16]   (intermediate save done)
+[21:03:16] Saved to C:\Users\admin\PRISM\results\retrieval_heads\qwen25_7b_bf16_128k.json
+[21:03:16] === SUMMARY ===
+[21:03:16]   ctx=2048: VRAM=16.62GB, R_h(0.3)=83.9%, mean=0.5735
+[21:03:16]   ctx=4096: VRAM=16.62GB, R_h(0.3)=83.0%, mean=0.5598
+[21:03:16]   ctx=8192: VRAM=16.62GB, R_h(0.3)=91.1%, mean=0.6265
+[21:03:16]   ctx=16384: VRAM=16.82GB, R_h(0.3)=92.9%, mean=0.6391
+[21:03:16]   ctx=32768: VRAM=17.99GB, R_h(0.3)=95.5%, mean=0.6559
+[21:03:16]   ctx=65536: VRAM=20.68GB, R_h(0.3)=92.0%, mean=0.6325
+[21:03:16]   ctx=131072: VRAM=21.38GB, R_h(0.3)=98.2%, mean=0.7955
+[21:03:16] COMPLETE

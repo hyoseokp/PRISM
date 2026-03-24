@@ -1,0 +1,1503 @@
+[2026-03-14 16:56:00] Text: 625932 chars
+[2026-03-14 16:56:00] Loaded R_h from ctx=8192
+[2026-03-14 16:56:00] Retrieval heads: 102/112 (91.1%)
+[2026-03-14 16:56:00] Loading Qwen/Qwen2.5-7B (SDPA mode)...
+[2026-03-14 16:56:10] Arch: 28L, 28AH, 4KVH, G=7, head_dim=128
+[2026-03-14 16:56:10] SDPA enabled -- O(n) memory, supports up to 128K context
+[2026-03-14 16:56:10] Available tokens: 155101
+[2026-03-14 16:56:10] 
+============================================================
+[2026-03-14 16:56:10] NIAH v2: MRR-integrated (SDPA, SOI Si, extended ctx)
+[2026-03-14 16:56:10] ============================================================
+[2026-03-14 16:56:10] 
+============================================================
+[2026-03-14 16:56:10] Context: 4096 tokens (4K)
+[2026-03-14 16:56:10] ============================================================
+[2026-03-14 16:56:14]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:14]   [1/66] ctx=4K pos=5%: full=HIT (3.3s) VRAM=15.5GB
+[2026-03-14 16:56:16]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:16]   [2/66] ctx=4K pos=10%: full=HIT (2.7s) VRAM=15.5GB
+[2026-03-14 16:56:19]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:19]   [3/66] ctx=4K pos=20%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:22]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:22]   [4/66] ctx=4K pos=30%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:25]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:25]   [5/66] ctx=4K pos=40%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:28]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:28]   [6/66] ctx=4K pos=50%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:31]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:31]   [7/66] ctx=4K pos=60%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:34]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:34]   [8/66] ctx=4K pos=70%: full=HIT (2.9s) VRAM=15.5GB
+[2026-03-14 16:56:37]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:37]   [9/66] ctx=4K pos=80%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:40]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:40]   [10/66] ctx=4K pos=90%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:42]     ideal k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     ideal k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_5bit_20pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_5bit_20pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_4bit_30pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_4bit_30pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_5bit_10pm k=8: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]     si_5bit_10pm k=16: union=31/31 (100%) -> use full result
+[2026-03-14 16:56:42]   [11/66] ctx=4K pos=95%: full=HIT (2.8s) VRAM=15.5GB
+[2026-03-14 16:56:43] 
+  >> ctx=4K: full=100.0%
+[2026-03-14 16:56:43]      ideal k=8: 100.0%
+[2026-03-14 16:56:43]      ideal k=16: 100.0%
+[2026-03-14 16:56:43]      ideal k=32: 100.0%
+[2026-03-14 16:56:43]      si_5bit_20pm k=8: 100.0%
+[2026-03-14 16:56:43]      si_5bit_20pm k=16: 100.0%
+[2026-03-14 16:56:43]      si_5bit_20pm k=32: 100.0%
+[2026-03-14 16:56:43]      si_4bit_30pm k=8: 100.0%
+[2026-03-14 16:56:43]      si_4bit_30pm k=16: 100.0%
+[2026-03-14 16:56:43]      si_4bit_30pm k=32: 100.0%
+[2026-03-14 16:56:43]      si_5bit_10pm k=8: 100.0%
+[2026-03-14 16:56:43]      si_5bit_10pm k=16: 100.0%
+[2026-03-14 16:56:43]      si_5bit_10pm k=32: 100.0%
+[2026-03-14 16:56:43]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 16:56:43] 
+============================================================
+[2026-03-14 16:56:43] Context: 8192 tokens (8K)
+[2026-03-14 16:56:43] ============================================================
+[2026-03-14 16:56:50]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:50]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:50]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:50]   [12/66] ctx=8K pos=5%: full=HIT (7.1s) VRAM=15.7GB
+[2026-03-14 16:56:57]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:57]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_4bit_30pm k=8: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:56:57]   [13/66] ctx=8K pos=10%: full=HIT (7.3s) VRAM=15.7GB
+[2026-03-14 16:57:04]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:04]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:04]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:04]   [14/66] ctx=8K pos=20%: full=HIT (7.3s) VRAM=15.7GB
+[2026-03-14 16:57:12]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:12]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:12]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:12]   [15/66] ctx=8K pos=30%: full=HIT (7.3s) VRAM=15.7GB
+[2026-03-14 16:57:19]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:19]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:19]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:19]   [16/66] ctx=8K pos=40%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:57:27]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:27]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_4bit_30pm k=8: union=61/63 (97%) -> use full result
+[2026-03-14 16:57:27]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:27]   [17/66] ctx=8K pos=50%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:57:34]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:34]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:34]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:34]   [18/66] ctx=8K pos=60%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:57:42]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:42]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:42]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:42]   [19/66] ctx=8K pos=70%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:57:49]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:49]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:49]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:49]   [20/66] ctx=8K pos=80%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:57:57]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:57]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:57]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:57:57]   [21/66] ctx=8K pos=90%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:58:04]     ideal k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:58:04]     ideal k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     ideal k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_20pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_20pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_20pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_4bit_30pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:58:04]     si_4bit_30pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_4bit_30pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_10pm k=8: union=62/63 (98%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_10pm k=16: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]     si_5bit_10pm k=32: union=63/63 (100%) -> use full result
+[2026-03-14 16:58:04]   [22/66] ctx=8K pos=95%: full=HIT (7.4s) VRAM=15.7GB
+[2026-03-14 16:58:04] 
+  >> ctx=8K: full=100.0%
+[2026-03-14 16:58:04]      ideal k=8: 100.0%
+[2026-03-14 16:58:04]      ideal k=16: 100.0%
+[2026-03-14 16:58:04]      ideal k=32: 100.0%
+[2026-03-14 16:58:04]      si_5bit_20pm k=8: 100.0%
+[2026-03-14 16:58:04]      si_5bit_20pm k=16: 100.0%
+[2026-03-14 16:58:04]      si_5bit_20pm k=32: 100.0%
+[2026-03-14 16:58:04]      si_4bit_30pm k=8: 100.0%
+[2026-03-14 16:58:04]      si_4bit_30pm k=16: 100.0%
+[2026-03-14 16:58:04]      si_4bit_30pm k=32: 100.0%
+[2026-03-14 16:58:04]      si_5bit_10pm k=8: 100.0%
+[2026-03-14 16:58:04]      si_5bit_10pm k=16: 100.0%
+[2026-03-14 16:58:04]      si_5bit_10pm k=32: 100.0%
+[2026-03-14 16:58:04]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 16:58:04] 
+============================================================
+[2026-03-14 16:58:04] Context: 16384 tokens (16K)
+[2026-03-14 16:58:04] ============================================================
+[2026-03-14 16:58:04]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:58:04]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:58:09]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:58:09]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:58:12]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:58:12]   Extracting signatures...
+[2026-03-14 16:58:12]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:58:12]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:58:12]     ideal k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 16:58:14]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:14]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:14]     si_5bit_20pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:58:16]     si_5bit_20pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 16:58:16]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:16]     si_4bit_30pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:58:18]     si_4bit_30pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:18]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:18]     si_5bit_10pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:58:21]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:21]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:21]   [23/66] ctx=16K pos=5%: full=HIT (16.4s) VRAM=16.2GB
+[2026-03-14 16:58:21]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:58:21]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:58:26]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:58:26]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:58:28]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:58:28]   Extracting signatures...
+[2026-03-14 16:58:28]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:58:28]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:58:28]     ideal k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:58:31]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:31]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:31]     si_5bit_20pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:58:35]     si_5bit_20pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:35]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:35]     si_4bit_30pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:58:37]     si_4bit_30pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:37]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:37]     si_5bit_10pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:58:40]     si_5bit_10pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:58:40]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:40]   [24/66] ctx=16K pos=10%: full=HIT (19.1s) VRAM=16.2GB
+[2026-03-14 16:58:40]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:58:40]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:58:45]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:58:45]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:58:47]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:58:47]   Extracting signatures...
+[2026-03-14 16:58:47]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:58:47]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:58:47]     ideal k=8: union=113/127 (89%), 14566 tokens
+[2026-03-14 16:58:49]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:49]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:49]     si_5bit_20pm k=8: union=114/127 (90%), 14694 tokens
+[2026-03-14 16:58:52]     si_5bit_20pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:58:52]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:52]     si_4bit_30pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:58:54]     si_4bit_30pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 16:58:54]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:54]     si_5bit_10pm k=8: union=113/127 (89%), 14566 tokens
+[2026-03-14 16:58:56]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:58:56]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:58:56]   [25/66] ctx=16K pos=20%: full=HIT (16.1s) VRAM=16.2GB
+[2026-03-14 16:58:56]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:58:56]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:59:01]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:59:01]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:59:03]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:59:03]   Extracting signatures...
+[2026-03-14 16:59:03]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:59:03]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:59:03]     ideal k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:59:06]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:06]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:06]     si_5bit_20pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:59:08]     si_5bit_20pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:08]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:08]     si_4bit_30pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:59:10]     si_4bit_30pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:10]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:10]     si_5bit_10pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:59:12]     si_5bit_10pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:59:12]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:12]   [26/66] ctx=16K pos=30%: full=HIT (16.2s) VRAM=16.2GB
+[2026-03-14 16:59:12]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:59:12]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:59:17]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:59:17]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:59:20]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:59:20]   Extracting signatures...
+[2026-03-14 16:59:20]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:59:20]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:59:20]     ideal k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 16:59:22]     ideal k=16: union=123/127 (97%) -> use full result
+[2026-03-14 16:59:22]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:22]     si_5bit_20pm k=8: union=114/127 (90%), 14694 tokens
+[2026-03-14 16:59:24]     si_5bit_20pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:59:24]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:24]     si_4bit_30pm k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 16:59:26]     si_4bit_30pm k=16: union=123/127 (97%) -> use full result
+[2026-03-14 16:59:26]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:26]     si_5bit_10pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:59:29]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:29]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:29]   [27/66] ctx=16K pos=40%: full=HIT (16.1s) VRAM=16.2GB
+[2026-03-14 16:59:29]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:59:29]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:59:34]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:59:34]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:59:36]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:59:36]   Extracting signatures...
+[2026-03-14 16:59:36]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:59:36]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:59:36]     ideal k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:59:38]     ideal k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:59:38]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:38]     si_5bit_20pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 16:59:40]     si_5bit_20pm k=16: union=123/127 (97%) -> use full result
+[2026-03-14 16:59:40]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:40]     si_4bit_30pm k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 16:59:43]     si_4bit_30pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 16:59:43]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:43]     si_5bit_10pm k=8: union=113/127 (89%), 14566 tokens
+[2026-03-14 16:59:45]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:45]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:45]   [28/66] ctx=16K pos=50%: full=HIT (16.1s) VRAM=16.2GB
+[2026-03-14 16:59:45]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 16:59:45]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 16:59:50]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 16:59:50]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 16:59:52]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 16:59:52]   Extracting signatures...
+[2026-03-14 16:59:52]   Signatures done. VRAM=16.2GB
+[2026-03-14 16:59:52]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 16:59:52]     ideal k=8: union=114/127 (90%), 14694 tokens
+[2026-03-14 16:59:54]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:54]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:54]     si_5bit_20pm k=8: union=114/127 (90%), 14694 tokens
+[2026-03-14 16:59:56]     si_5bit_20pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 16:59:56]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:56]     si_4bit_30pm k=8: union=117/127 (92%), 15078 tokens
+[2026-03-14 16:59:59]     si_4bit_30pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 16:59:59]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 16:59:59]     si_5bit_10pm k=8: union=112/127 (88%), 14438 tokens
+[2026-03-14 17:00:01]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:01]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:01]   [29/66] ctx=16K pos=60%: full=HIT (16.0s) VRAM=16.2GB
+[2026-03-14 17:00:01]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 17:00:01]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 17:00:06]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 17:00:06]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 17:00:08]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 17:00:08]   Extracting signatures...
+[2026-03-14 17:00:08]   Signatures done. VRAM=16.2GB
+[2026-03-14 17:00:08]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 17:00:08]     ideal k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 17:00:10]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:10]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:10]     si_5bit_20pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 17:00:13]     si_5bit_20pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:13]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:13]     si_4bit_30pm k=8: union=122/127 (96%) -> use full result
+[2026-03-14 17:00:13]     si_4bit_30pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 17:00:13]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:13]     si_5bit_10pm k=8: union=114/127 (90%), 14694 tokens
+[2026-03-14 17:00:15]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:15]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:15]   [30/66] ctx=16K pos=70%: full=HIT (13.9s) VRAM=16.2GB
+[2026-03-14 17:00:15]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 17:00:15]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 17:00:20]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 17:00:20]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 17:00:22]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 17:00:22]   Extracting signatures...
+[2026-03-14 17:00:22]   Signatures done. VRAM=16.2GB
+[2026-03-14 17:00:22]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 17:00:22]     ideal k=8: union=112/127 (88%), 14438 tokens
+[2026-03-14 17:00:24]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:24]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:24]     si_5bit_20pm k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 17:00:27]     si_5bit_20pm k=16: union=123/127 (97%) -> use full result
+[2026-03-14 17:00:27]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:27]     si_4bit_30pm k=8: union=115/127 (91%), 14822 tokens
+[2026-03-14 17:00:29]     si_4bit_30pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:29]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:29]     si_5bit_10pm k=8: union=113/127 (89%), 14566 tokens
+[2026-03-14 17:00:31]     si_5bit_10pm k=16: union=124/127 (98%) -> use full result
+[2026-03-14 17:00:31]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:31]   [31/66] ctx=16K pos=80%: full=HIT (16.0s) VRAM=16.2GB
+[2026-03-14 17:00:31]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 17:00:31]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 17:00:36]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 17:00:36]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 17:00:38]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 17:00:38]   Extracting signatures...
+[2026-03-14 17:00:38]   Signatures done. VRAM=16.2GB
+[2026-03-14 17:00:38]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 17:00:38]     ideal k=8: union=111/127 (87%), 14310 tokens
+[2026-03-14 17:00:40]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:40]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:40]     si_5bit_20pm k=8: union=112/127 (88%), 14438 tokens
+[2026-03-14 17:00:43]     si_5bit_20pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:43]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:43]     si_4bit_30pm k=8: union=116/127 (91%), 14950 tokens
+[2026-03-14 17:00:45]     si_4bit_30pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:45]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:45]     si_5bit_10pm k=8: union=111/127 (87%), 14310 tokens
+[2026-03-14 17:00:47]     si_5bit_10pm k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:47]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:47]   [32/66] ctx=16K pos=90%: full=HIT (16.0s) VRAM=16.2GB
+[2026-03-14 17:00:47]   Chunked mode (ctx=16358, 127 blocks)
+[2026-03-14 17:00:47]   Chunked prefill: 16358 tokens, 4 chunks x 4096
+[2026-03-14 17:00:52]     chunk 4/4 (16358/16358) VRAM=16.2GB
+[2026-03-14 17:00:52]   Prefill done. VRAM=16.2GB. Generating...
+[2026-03-14 17:00:54]   Generate done: HIT. VRAM=16.2GB
+[2026-03-14 17:00:54]   Extracting signatures...
+[2026-03-14 17:00:54]   Signatures done. VRAM=16.2GB
+[2026-03-14 17:00:54]   Full cache retained for sparse eval. VRAM=16.2GB
+[2026-03-14 17:00:54]     ideal k=8: union=110/127 (87%), 14182 tokens
+[2026-03-14 17:00:57]     ideal k=16: union=125/127 (98%) -> use full result
+[2026-03-14 17:00:57]     ideal k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:57]     si_5bit_20pm k=8: union=109/127 (86%), 14054 tokens
+[2026-03-14 17:00:59]     si_5bit_20pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 17:00:59]     si_5bit_20pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:00:59]     si_4bit_30pm k=8: union=111/127 (87%), 14310 tokens
+[2026-03-14 17:01:01]     si_4bit_30pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 17:01:01]     si_4bit_30pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:01:01]     si_5bit_10pm k=8: union=111/127 (87%), 14310 tokens
+[2026-03-14 17:01:03]     si_5bit_10pm k=16: union=126/127 (99%) -> use full result
+[2026-03-14 17:01:03]     si_5bit_10pm k=32: union=127/127 (100%) -> use full result
+[2026-03-14 17:01:03]   [33/66] ctx=16K pos=95%: full=HIT (15.9s) VRAM=16.2GB
+[2026-03-14 17:01:03] 
+  >> ctx=16K: full=100.0%
+[2026-03-14 17:01:03]      ideal k=8: 90.9%
+[2026-03-14 17:01:03]      ideal k=16: 100.0%
+[2026-03-14 17:01:03]      ideal k=32: 100.0%
+[2026-03-14 17:01:03]      si_5bit_20pm k=8: 90.9%
+[2026-03-14 17:01:03]      si_5bit_20pm k=16: 100.0%
+[2026-03-14 17:01:03]      si_5bit_20pm k=32: 100.0%
+[2026-03-14 17:01:03]      si_4bit_30pm k=8: 90.9%
+[2026-03-14 17:01:03]      si_4bit_30pm k=16: 100.0%
+[2026-03-14 17:01:03]      si_4bit_30pm k=32: 100.0%
+[2026-03-14 17:01:03]      si_5bit_10pm k=8: 90.9%
+[2026-03-14 17:01:03]      si_5bit_10pm k=16: 100.0%
+[2026-03-14 17:01:03]      si_5bit_10pm k=32: 100.0%
+[2026-03-14 17:01:03]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 17:01:03] 
+============================================================
+[2026-03-14 17:01:03] Context: 32768 tokens (32K)
+[2026-03-14 17:01:03] ============================================================
+[2026-03-14 17:01:03]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:01:03]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:01:08]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:01:14]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:01:14]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:01:18]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:01:18]   Extracting signatures...
+[2026-03-14 17:01:18]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:01:18]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:01:18]     ideal k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:01:21]     ideal k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:01:25]     ideal k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:01:25]     si_5bit_20pm k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:01:28]     si_5bit_20pm k=16: union=230/255 (90%), 29542 tokens
+[2026-03-14 17:01:32]     si_5bit_20pm k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:01:32]     si_4bit_30pm k=8: union=202/255 (79%), 25958 tokens
+[2026-03-14 17:01:35]     si_4bit_30pm k=16: union=236/255 (93%), 30310 tokens
+[2026-03-14 17:01:39]     si_4bit_30pm k=32: union=253/255 (99%) -> use full result
+[2026-03-14 17:01:39]     si_5bit_10pm k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:01:43]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:01:46]     si_5bit_10pm k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:01:46]   [34/66] ctx=32K pos=5%: full=HIT (43.2s) VRAM=17.1GB
+[2026-03-14 17:01:46]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:01:46]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:01:51]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:01:57]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:01:57]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:02:01]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:02:01]   Extracting signatures...
+[2026-03-14 17:02:01]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:02:01]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:02:01]     ideal k=8: union=188/255 (74%), 24166 tokens
+[2026-03-14 17:02:05]     ideal k=16: union=225/255 (88%), 28902 tokens
+[2026-03-14 17:02:08]     ideal k=32: union=247/255 (97%) -> use full result
+[2026-03-14 17:02:08]     si_5bit_20pm k=8: union=184/255 (72%), 23654 tokens
+[2026-03-14 17:02:11]     si_5bit_20pm k=16: union=224/255 (88%), 28774 tokens
+[2026-03-14 17:02:15]     si_5bit_20pm k=32: union=247/255 (97%) -> use full result
+[2026-03-14 17:02:15]     si_4bit_30pm k=8: union=189/255 (74%), 24294 tokens
+[2026-03-14 17:02:18]     si_4bit_30pm k=16: union=231/255 (91%), 29670 tokens
+[2026-03-14 17:02:22]     si_4bit_30pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:02:22]     si_5bit_10pm k=8: union=188/255 (74%), 24166 tokens
+[2026-03-14 17:02:25]     si_5bit_10pm k=16: union=224/255 (88%), 28774 tokens
+[2026-03-14 17:02:29]     si_5bit_10pm k=32: union=249/255 (98%) -> use full result
+[2026-03-14 17:02:29]   [35/66] ctx=32K pos=10%: full=HIT (42.6s) VRAM=17.1GB
+[2026-03-14 17:02:29]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:02:29]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:02:34]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:02:40]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:02:40]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:02:44]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:02:44]   Extracting signatures...
+[2026-03-14 17:02:44]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:02:44]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:02:44]     ideal k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:02:47]     ideal k=16: union=225/255 (88%), 28902 tokens
+[2026-03-14 17:02:51]     ideal k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:02:51]     si_5bit_20pm k=8: union=188/255 (74%), 24166 tokens
+[2026-03-14 17:02:54]     si_5bit_20pm k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:02:58]     si_5bit_20pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:02:58]     si_4bit_30pm k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:03:01]     si_4bit_30pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:03:05]     si_4bit_30pm k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:03:05]     si_5bit_10pm k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:03:08]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:03:12]     si_5bit_10pm k=32: union=253/255 (99%) -> use full result
+[2026-03-14 17:03:12]   [36/66] ctx=32K pos=20%: full=HIT (42.8s) VRAM=17.1GB
+[2026-03-14 17:03:12]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:03:12]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:03:17]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:03:23]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:03:23]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:03:27]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:03:27]   Extracting signatures...
+[2026-03-14 17:03:27]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:03:27]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:03:27]     ideal k=8: union=189/255 (74%), 24294 tokens
+[2026-03-14 17:03:30]     ideal k=16: union=225/255 (88%), 28902 tokens
+[2026-03-14 17:03:34]     ideal k=32: union=249/255 (98%) -> use full result
+[2026-03-14 17:03:34]     si_5bit_20pm k=8: union=187/255 (73%), 24038 tokens
+[2026-03-14 17:03:37]     si_5bit_20pm k=16: union=228/255 (89%), 29286 tokens
+[2026-03-14 17:03:41]     si_5bit_20pm k=32: union=249/255 (98%) -> use full result
+[2026-03-14 17:03:41]     si_4bit_30pm k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:03:44]     si_4bit_30pm k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:03:48]     si_4bit_30pm k=32: union=253/255 (99%) -> use full result
+[2026-03-14 17:03:48]     si_5bit_10pm k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:03:51]     si_5bit_10pm k=16: union=225/255 (88%), 28902 tokens
+[2026-03-14 17:03:55]     si_5bit_10pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:03:55]   [37/66] ctx=32K pos=30%: full=HIT (42.5s) VRAM=17.1GB
+[2026-03-14 17:03:55]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:03:55]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:04:00]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:04:05]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:04:05]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:04:09]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:04:09]   Extracting signatures...
+[2026-03-14 17:04:09]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:04:09]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:04:09]     ideal k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:04:13]     ideal k=16: union=228/255 (89%), 29286 tokens
+[2026-03-14 17:04:16]     ideal k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:04:16]     si_5bit_20pm k=8: union=191/255 (75%), 24550 tokens
+[2026-03-14 17:04:20]     si_5bit_20pm k=16: union=230/255 (90%), 29542 tokens
+[2026-03-14 17:04:23]     si_5bit_20pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:04:23]     si_4bit_30pm k=8: union=194/255 (76%), 24934 tokens
+[2026-03-14 17:04:27]     si_4bit_30pm k=16: union=236/255 (93%), 30310 tokens
+[2026-03-14 17:04:30]     si_4bit_30pm k=32: union=253/255 (99%) -> use full result
+[2026-03-14 17:04:30]     si_5bit_10pm k=8: union=189/255 (74%), 24294 tokens
+[2026-03-14 17:04:34]     si_5bit_10pm k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:04:37]     si_5bit_10pm k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:04:37]   [38/66] ctx=32K pos=40%: full=HIT (42.7s) VRAM=17.1GB
+[2026-03-14 17:04:38]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:04:38]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:04:42]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:04:48]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:04:48]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:04:52]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:04:52]   Extracting signatures...
+[2026-03-14 17:04:52]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:04:52]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:04:52]     ideal k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:04:55]     ideal k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:04:59]     ideal k=32: union=249/255 (98%) -> use full result
+[2026-03-14 17:04:59]     si_5bit_20pm k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:05:02]     si_5bit_20pm k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:05:06]     si_5bit_20pm k=32: union=249/255 (98%) -> use full result
+[2026-03-14 17:05:06]     si_4bit_30pm k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:05:09]     si_4bit_30pm k=16: union=231/255 (91%), 29670 tokens
+[2026-03-14 17:05:13]     si_4bit_30pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:05:13]     si_5bit_10pm k=8: union=188/255 (74%), 24166 tokens
+[2026-03-14 17:05:16]     si_5bit_10pm k=16: union=224/255 (88%), 28774 tokens
+[2026-03-14 17:05:20]     si_5bit_10pm k=32: union=247/255 (97%) -> use full result
+[2026-03-14 17:05:20]   [39/66] ctx=32K pos=50%: full=HIT (42.5s) VRAM=17.1GB
+[2026-03-14 17:05:20]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:05:20]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:05:25]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:05:31]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:05:31]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:05:35]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:05:35]   Extracting signatures...
+[2026-03-14 17:05:35]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:05:35]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:05:35]     ideal k=8: union=185/255 (73%), 23782 tokens
+[2026-03-14 17:05:38]     ideal k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:05:42]     ideal k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:05:42]     si_5bit_20pm k=8: union=187/255 (73%), 24038 tokens
+[2026-03-14 17:05:45]     si_5bit_20pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:05:49]     si_5bit_20pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:05:49]     si_4bit_30pm k=8: union=191/255 (75%), 24550 tokens
+[2026-03-14 17:05:52]     si_4bit_30pm k=16: union=227/255 (89%), 29158 tokens
+[2026-03-14 17:05:56]     si_4bit_30pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:05:56]     si_5bit_10pm k=8: union=188/255 (74%), 24166 tokens
+[2026-03-14 17:05:59]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:06:03]     si_5bit_10pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:06:03]   [40/66] ctx=32K pos=60%: full=HIT (42.7s) VRAM=17.1GB
+[2026-03-14 17:06:03]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:06:03]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:06:08]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:06:14]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:06:14]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:06:18]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:06:18]   Extracting signatures...
+[2026-03-14 17:06:18]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:06:18]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:06:18]     ideal k=8: union=190/255 (75%), 24422 tokens
+[2026-03-14 17:06:21]     ideal k=16: union=230/255 (90%), 29542 tokens
+[2026-03-14 17:06:25]     ideal k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:06:25]     si_5bit_20pm k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:06:28]     si_5bit_20pm k=16: union=231/255 (91%), 29670 tokens
+[2026-03-14 17:06:32]     si_5bit_20pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:06:32]     si_4bit_30pm k=8: union=196/255 (77%), 25190 tokens
+[2026-03-14 17:06:35]     si_4bit_30pm k=16: union=235/255 (92%), 30182 tokens
+[2026-03-14 17:06:39]     si_4bit_30pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:06:39]     si_5bit_10pm k=8: union=192/255 (75%), 24678 tokens
+[2026-03-14 17:06:42]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:06:46]     si_5bit_10pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:06:46]   [41/66] ctx=32K pos=70%: full=HIT (43.3s) VRAM=17.1GB
+[2026-03-14 17:06:46]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:06:46]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:06:51]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:06:57]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:06:57]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:07:01]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:07:01]   Extracting signatures...
+[2026-03-14 17:07:01]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:07:01]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:07:01]     ideal k=8: union=187/255 (73%), 24038 tokens
+[2026-03-14 17:07:05]     ideal k=16: union=232/255 (91%), 29798 tokens
+[2026-03-14 17:07:08]     ideal k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:07:08]     si_5bit_20pm k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:07:11]     si_5bit_20pm k=16: union=225/255 (88%), 28902 tokens
+[2026-03-14 17:07:15]     si_5bit_20pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:07:15]     si_4bit_30pm k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:07:18]     si_4bit_30pm k=16: union=233/255 (91%), 29926 tokens
+[2026-03-14 17:07:22]     si_4bit_30pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:07:22]     si_5bit_10pm k=8: union=191/255 (75%), 24550 tokens
+[2026-03-14 17:07:26]     si_5bit_10pm k=16: union=228/255 (89%), 29286 tokens
+[2026-03-14 17:07:29]     si_5bit_10pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:07:29]   [42/66] ctx=32K pos=80%: full=HIT (43.0s) VRAM=17.1GB
+[2026-03-14 17:07:29]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:07:29]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:07:34]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:07:40]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:07:40]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:07:44]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:07:44]   Extracting signatures...
+[2026-03-14 17:07:44]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:07:44]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:07:44]     ideal k=8: union=193/255 (76%), 24806 tokens
+[2026-03-14 17:07:47]     ideal k=16: union=226/255 (89%), 29030 tokens
+[2026-03-14 17:07:51]     ideal k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:07:51]     si_5bit_20pm k=8: union=198/255 (78%), 25446 tokens
+[2026-03-14 17:07:55]     si_5bit_20pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:07:58]     si_5bit_20pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:07:58]     si_4bit_30pm k=8: union=192/255 (75%), 24678 tokens
+[2026-03-14 17:08:02]     si_4bit_30pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:08:05]     si_4bit_30pm k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:08:05]     si_5bit_10pm k=8: union=192/255 (75%), 24678 tokens
+[2026-03-14 17:08:09]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:08:12]     si_5bit_10pm k=32: union=250/255 (98%) -> use full result
+[2026-03-14 17:08:12]   [43/66] ctx=32K pos=90%: full=HIT (43.0s) VRAM=17.1GB
+[2026-03-14 17:08:12]   Chunked mode (ctx=32742, 255 blocks)
+[2026-03-14 17:08:12]   Chunked prefill: 32742 tokens, 8 chunks x 4096
+[2026-03-14 17:08:17]     chunk 4/8 (16384/32742) VRAM=16.2GB
+[2026-03-14 17:08:23]     chunk 8/8 (32742/32742) VRAM=17.1GB
+[2026-03-14 17:08:23]   Prefill done. VRAM=17.1GB. Generating...
+[2026-03-14 17:08:27]   Generate done: HIT. VRAM=17.1GB
+[2026-03-14 17:08:27]   Extracting signatures...
+[2026-03-14 17:08:27]   Signatures done. VRAM=17.1GB
+[2026-03-14 17:08:27]   Full cache retained for sparse eval. VRAM=17.1GB
+[2026-03-14 17:08:27]     ideal k=8: union=186/255 (73%), 23910 tokens
+[2026-03-14 17:08:30]     ideal k=16: union=228/255 (89%), 29286 tokens
+[2026-03-14 17:08:34]     ideal k=32: union=252/255 (99%) -> use full result
+[2026-03-14 17:08:34]     si_5bit_20pm k=8: union=189/255 (74%), 24294 tokens
+[2026-03-14 17:08:37]     si_5bit_20pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:08:41]     si_5bit_20pm k=32: union=253/255 (99%) -> use full result
+[2026-03-14 17:08:41]     si_4bit_30pm k=8: union=195/255 (76%), 25062 tokens
+[2026-03-14 17:08:44]     si_4bit_30pm k=16: union=232/255 (91%), 29798 tokens
+[2026-03-14 17:08:48]     si_4bit_30pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:08:48]     si_5bit_10pm k=8: union=191/255 (75%), 24550 tokens
+[2026-03-14 17:08:52]     si_5bit_10pm k=16: union=229/255 (90%), 29414 tokens
+[2026-03-14 17:08:55]     si_5bit_10pm k=32: union=251/255 (98%) -> use full result
+[2026-03-14 17:08:55]   [44/66] ctx=32K pos=95%: full=HIT (42.8s) VRAM=17.1GB
+[2026-03-14 17:08:55] 
+  >> ctx=32K: full=100.0%
+[2026-03-14 17:08:55]      ideal k=8: 63.6%
+[2026-03-14 17:08:55]      ideal k=16: 81.8%
+[2026-03-14 17:08:55]      ideal k=32: 100.0%
+[2026-03-14 17:08:55]      si_5bit_20pm k=8: 72.7%
+[2026-03-14 17:08:55]      si_5bit_20pm k=16: 90.9%
+[2026-03-14 17:08:55]      si_5bit_20pm k=32: 100.0%
+[2026-03-14 17:08:55]      si_4bit_30pm k=8: 72.7%
+[2026-03-14 17:08:55]      si_4bit_30pm k=16: 90.9%
+[2026-03-14 17:08:55]      si_4bit_30pm k=32: 100.0%
+[2026-03-14 17:08:55]      si_5bit_10pm k=8: 63.6%
+[2026-03-14 17:08:55]      si_5bit_10pm k=16: 90.9%
+[2026-03-14 17:08:55]      si_5bit_10pm k=32: 100.0%
+[2026-03-14 17:08:55]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 17:08:55] 
+============================================================
+[2026-03-14 17:08:55] Context: 65536 tokens (64K)
+[2026-03-14 17:08:55] ============================================================
+[2026-03-14 17:08:55]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:08:55]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:09:00]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:09:06]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:09:14]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:09:23]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:09:23]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:09:32]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:09:32]   Extracting signatures...
+[2026-03-14 17:09:32]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:09:32]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:09:32]     ideal k=8: union=299/511 (59%), 38374 tokens
+[2026-03-14 17:09:37]     ideal k=16: union=402/511 (79%), 51558 tokens
+[2026-03-14 17:09:43]     ideal k=32: union=469/511 (92%), 60134 tokens
+[2026-03-14 17:09:51]     si_5bit_20pm k=8: union=298/511 (58%), 38246 tokens
+[2026-03-14 17:09:56]     si_5bit_20pm k=16: union=405/511 (79%), 51942 tokens
+[2026-03-14 17:10:02]     si_5bit_20pm k=32: union=466/511 (91%), 59750 tokens
+[2026-03-14 17:10:10]     si_4bit_30pm k=8: union=304/511 (59%), 39014 tokens
+[2026-03-14 17:10:15]     si_4bit_30pm k=16: union=398/511 (78%), 51046 tokens
+[2026-03-14 17:10:21]     si_4bit_30pm k=32: union=466/511 (91%), 59750 tokens
+[2026-03-14 17:10:29]     si_5bit_10pm k=8: union=302/511 (59%), 38758 tokens
+[2026-03-14 17:10:34]     si_5bit_10pm k=16: union=405/511 (79%), 51942 tokens
+[2026-03-14 17:10:40]     si_5bit_10pm k=32: union=471/511 (92%), 60390 tokens
+[2026-03-14 17:10:48]   [45/66] ctx=64K pos=5%: full=HIT (112.9s) VRAM=19.0GB
+[2026-03-14 17:10:48]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:10:48]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:10:53]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:10:59]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:11:07]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:11:16]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:11:16]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:11:25]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:11:25]   Extracting signatures...
+[2026-03-14 17:11:25]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:11:25]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:11:25]     ideal k=8: union=300/511 (59%), 38502 tokens
+[2026-03-14 17:11:30]     ideal k=16: union=392/511 (77%), 50278 tokens
+[2026-03-14 17:11:36]     ideal k=32: union=467/511 (91%), 59878 tokens
+[2026-03-14 17:11:44]     si_5bit_20pm k=8: union=305/511 (60%), 39142 tokens
+[2026-03-14 17:11:49]     si_5bit_20pm k=16: union=400/511 (78%), 51302 tokens
+[2026-03-14 17:11:55]     si_5bit_20pm k=32: union=469/511 (92%), 60134 tokens
+[2026-03-14 17:12:03]     si_4bit_30pm k=8: union=299/511 (59%), 38374 tokens
+[2026-03-14 17:12:08]     si_4bit_30pm k=16: union=399/511 (78%), 51174 tokens
+[2026-03-14 17:12:14]     si_4bit_30pm k=32: union=468/511 (92%), 60006 tokens
+[2026-03-14 17:12:22]     si_5bit_10pm k=8: union=297/511 (58%), 38118 tokens
+[2026-03-14 17:12:27]     si_5bit_10pm k=16: union=394/511 (77%), 50534 tokens
+[2026-03-14 17:12:33]     si_5bit_10pm k=32: union=469/511 (92%), 60134 tokens
+[2026-03-14 17:12:41]   [46/66] ctx=64K pos=10%: full=HIT (112.4s) VRAM=19.0GB
+[2026-03-14 17:12:41]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:12:41]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:12:46]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:12:52]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:12:59]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:13:09]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:13:09]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:13:18]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:13:18]   Extracting signatures...
+[2026-03-14 17:13:18]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:13:18]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:13:18]     ideal k=8: union=301/511 (59%), 38630 tokens
+[2026-03-14 17:13:23]     ideal k=16: union=399/511 (78%), 51174 tokens
+[2026-03-14 17:13:29]     ideal k=32: union=461/511 (90%), 59110 tokens
+[2026-03-14 17:13:37]     si_5bit_20pm k=8: union=300/511 (59%), 38502 tokens
+[2026-03-14 17:13:41]     si_5bit_20pm k=16: union=401/511 (78%), 51430 tokens
+[2026-03-14 17:13:48]     si_5bit_20pm k=32: union=467/511 (91%), 59878 tokens
+[2026-03-14 17:13:56]     si_4bit_30pm k=8: union=308/511 (60%), 39526 tokens
+[2026-03-14 17:14:00]     si_4bit_30pm k=16: union=405/511 (79%), 51942 tokens
+[2026-03-14 17:14:07]     si_4bit_30pm k=32: union=470/511 (92%), 60262 tokens
+[2026-03-14 17:14:15]     si_5bit_10pm k=8: union=304/511 (59%), 39014 tokens
+[2026-03-14 17:14:20]     si_5bit_10pm k=16: union=399/511 (78%), 51174 tokens
+[2026-03-14 17:14:26]     si_5bit_10pm k=32: union=468/511 (92%), 60006 tokens
+[2026-03-14 17:14:34]   [47/66] ctx=64K pos=20%: full=HIT (113.0s) VRAM=19.0GB
+[2026-03-14 17:14:34]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:14:34]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:14:39]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:14:45]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:14:52]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:15:02]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:15:02]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:15:10]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:15:10]   Extracting signatures...
+[2026-03-14 17:15:11]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:15:11]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:15:11]     ideal k=8: union=295/511 (58%), 37862 tokens
+[2026-03-14 17:15:15]     ideal k=16: union=401/511 (78%), 51430 tokens
+[2026-03-14 17:15:22]     ideal k=32: union=466/511 (91%), 59750 tokens
+[2026-03-14 17:15:30]     si_5bit_20pm k=8: union=302/511 (59%), 38758 tokens
+[2026-03-14 17:15:34]     si_5bit_20pm k=16: union=400/511 (78%), 51302 tokens
+[2026-03-14 17:15:41]     si_5bit_20pm k=32: union=471/511 (92%), 60390 tokens
+[2026-03-14 17:15:49]     si_4bit_30pm k=8: union=312/511 (61%), 40038 tokens
+[2026-03-14 17:15:54]     si_4bit_30pm k=16: union=391/511 (77%), 50150 tokens
+[2026-03-14 17:16:00]     si_4bit_30pm k=32: union=472/511 (92%), 60518 tokens
+[2026-03-14 17:16:08]     si_5bit_10pm k=8: union=304/511 (59%), 39014 tokens
+[2026-03-14 17:16:13]     si_5bit_10pm k=16: union=403/511 (79%), 51686 tokens
+[2026-03-14 17:16:19]     si_5bit_10pm k=32: union=470/511 (92%), 60262 tokens
+[2026-03-14 17:16:27]   [48/66] ctx=64K pos=30%: full=HIT (113.0s) VRAM=19.0GB
+[2026-03-14 17:16:27]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:16:27]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:16:32]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:16:38]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:16:46]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:16:55]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:16:55]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:17:04]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:17:04]   Extracting signatures...
+[2026-03-14 17:17:04]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:17:04]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:17:04]     ideal k=8: union=287/511 (56%), 36838 tokens
+[2026-03-14 17:17:09]     ideal k=16: union=379/511 (74%), 48614 tokens
+[2026-03-14 17:17:15]     ideal k=32: union=461/511 (90%), 59110 tokens
+[2026-03-14 17:17:22]     si_5bit_20pm k=8: union=289/511 (57%), 37094 tokens
+[2026-03-14 17:17:27]     si_5bit_20pm k=16: union=381/511 (75%), 48870 tokens
+[2026-03-14 17:17:33]     si_5bit_20pm k=32: union=455/511 (89%), 58342 tokens
+[2026-03-14 17:17:40]     si_4bit_30pm k=8: union=296/511 (58%), 37990 tokens
+[2026-03-14 17:17:45]     si_4bit_30pm k=16: union=387/511 (76%), 49638 tokens
+[2026-03-14 17:17:51]     si_4bit_30pm k=32: union=468/511 (92%), 60006 tokens
+[2026-03-14 17:17:59]     si_5bit_10pm k=8: union=287/511 (56%), 36838 tokens
+[2026-03-14 17:18:04]     si_5bit_10pm k=16: union=377/511 (74%), 48358 tokens
+[2026-03-14 17:18:10]     si_5bit_10pm k=32: union=456/511 (89%), 58470 tokens
+[2026-03-14 17:18:17]   [49/66] ctx=64K pos=40%: full=HIT (110.1s) VRAM=19.0GB
+[2026-03-14 17:18:17]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:18:17]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:18:22]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:18:28]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:18:36]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:18:45]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:18:45]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:18:54]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:18:54]   Extracting signatures...
+[2026-03-14 17:18:54]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:18:54]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:18:54]     ideal k=8: union=287/511 (56%), 36838 tokens
+[2026-03-14 17:18:59]     ideal k=16: union=377/511 (74%), 48358 tokens
+[2026-03-14 17:19:05]     ideal k=32: union=460/511 (90%), 58982 tokens
+[2026-03-14 17:19:12]     si_5bit_20pm k=8: union=291/511 (57%), 37350 tokens
+[2026-03-14 17:19:17]     si_5bit_20pm k=16: union=377/511 (74%), 48358 tokens
+[2026-03-14 17:19:23]     si_5bit_20pm k=32: union=461/511 (90%), 59110 tokens
+[2026-03-14 17:19:31]     si_4bit_30pm k=8: union=309/511 (60%), 39654 tokens
+[2026-03-14 17:19:35]     si_4bit_30pm k=16: union=377/511 (74%), 48358 tokens
+[2026-03-14 17:19:41]     si_4bit_30pm k=32: union=459/511 (90%), 58854 tokens
+[2026-03-14 17:19:49]     si_5bit_10pm k=8: union=289/511 (57%), 37094 tokens
+[2026-03-14 17:19:54]     si_5bit_10pm k=16: union=382/511 (75%), 48998 tokens
+[2026-03-14 17:20:00]     si_5bit_10pm k=32: union=458/511 (90%), 58726 tokens
+[2026-03-14 17:20:07]   [50/66] ctx=64K pos=50%: full=HIT (109.8s) VRAM=19.0GB
+[2026-03-14 17:20:07]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:20:07]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:20:12]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:20:18]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:20:26]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:20:35]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:20:35]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:20:44]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:20:44]   Extracting signatures...
+[2026-03-14 17:20:44]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:20:44]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:20:44]     ideal k=8: union=289/511 (57%), 37094 tokens
+[2026-03-14 17:20:49]     ideal k=16: union=379/511 (74%), 48614 tokens
+[2026-03-14 17:20:55]     ideal k=32: union=459/511 (90%), 58854 tokens
+[2026-03-14 17:21:02]     si_5bit_20pm k=8: union=290/511 (57%), 37222 tokens
+[2026-03-14 17:21:07]     si_5bit_20pm k=16: union=383/511 (75%), 49126 tokens
+[2026-03-14 17:21:13]     si_5bit_20pm k=32: union=459/511 (90%), 58854 tokens
+[2026-03-14 17:21:21]     si_4bit_30pm k=8: union=300/511 (59%), 38502 tokens
+[2026-03-14 17:21:25]     si_4bit_30pm k=16: union=386/511 (76%), 49510 tokens
+[2026-03-14 17:21:32]     si_4bit_30pm k=32: union=460/511 (90%), 58982 tokens
+[2026-03-14 17:21:39]     si_5bit_10pm k=8: union=291/511 (57%), 37350 tokens
+[2026-03-14 17:21:44]     si_5bit_10pm k=16: union=381/511 (75%), 48870 tokens
+[2026-03-14 17:21:50]     si_5bit_10pm k=32: union=454/511 (89%), 58214 tokens
+[2026-03-14 17:21:57]   [51/66] ctx=64K pos=60%: full=HIT (110.1s) VRAM=19.0GB
+[2026-03-14 17:21:58]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:21:58]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:22:02]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:22:08]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:22:16]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:22:26]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:22:26]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:22:34]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:22:34]   Extracting signatures...
+[2026-03-14 17:22:34]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:22:34]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:22:34]     ideal k=8: union=287/511 (56%), 36838 tokens
+[2026-03-14 17:22:39]     ideal k=16: union=381/511 (75%), 48870 tokens
+[2026-03-14 17:22:45]     ideal k=32: union=459/511 (90%), 58854 tokens
+[2026-03-14 17:22:52]     si_5bit_20pm k=8: union=295/511 (58%), 37862 tokens
+[2026-03-14 17:22:57]     si_5bit_20pm k=16: union=378/511 (74%), 48486 tokens
+[2026-03-14 17:23:03]     si_5bit_20pm k=32: union=457/511 (89%), 58598 tokens
+[2026-03-14 17:23:11]     si_4bit_30pm k=8: union=293/511 (57%), 37606 tokens
+[2026-03-14 17:23:15]     si_4bit_30pm k=16: union=392/511 (77%), 50278 tokens
+[2026-03-14 17:23:22]     si_4bit_30pm k=32: union=462/511 (90%), 59238 tokens
+[2026-03-14 17:23:29]     si_5bit_10pm k=8: union=293/511 (57%), 37606 tokens
+[2026-03-14 17:23:34]     si_5bit_10pm k=16: union=376/511 (74%), 48230 tokens
+[2026-03-14 17:23:40]     si_5bit_10pm k=32: union=458/511 (90%), 58726 tokens
+[2026-03-14 17:23:47]   [52/66] ctx=64K pos=70%: full=HIT (109.9s) VRAM=19.0GB
+[2026-03-14 17:23:48]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:23:48]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:23:52]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:23:58]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:24:06]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:24:16]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:24:16]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:24:24]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:24:24]   Extracting signatures...
+[2026-03-14 17:24:24]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:24:24]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:24:24]     ideal k=8: union=292/511 (57%), 37478 tokens
+[2026-03-14 17:24:29]     ideal k=16: union=378/511 (74%), 48486 tokens
+[2026-03-14 17:24:35]     ideal k=32: union=463/511 (91%), 59366 tokens
+[2026-03-14 17:24:43]     si_5bit_20pm k=8: union=298/511 (58%), 38246 tokens
+[2026-03-14 17:24:47]     si_5bit_20pm k=16: union=379/511 (74%), 48614 tokens
+[2026-03-14 17:24:53]     si_5bit_20pm k=32: union=462/511 (90%), 59238 tokens
+[2026-03-14 17:25:01]     si_4bit_30pm k=8: union=284/511 (56%), 36454 tokens
+[2026-03-14 17:25:06]     si_4bit_30pm k=16: union=401/511 (78%), 51430 tokens
+[2026-03-14 17:25:12]     si_4bit_30pm k=32: union=466/511 (91%), 59750 tokens
+[2026-03-14 17:25:20]     si_5bit_10pm k=8: union=301/511 (59%), 38630 tokens
+[2026-03-14 17:25:25]     si_5bit_10pm k=16: union=372/511 (73%), 47718 tokens
+[2026-03-14 17:25:30]     si_5bit_10pm k=32: union=460/511 (90%), 58982 tokens
+[2026-03-14 17:25:38]   [53/66] ctx=64K pos=80%: full=HIT (110.4s) VRAM=19.0GB
+[2026-03-14 17:25:38]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:25:38]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:25:43]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:25:49]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:25:57]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:26:06]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:26:06]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:26:15]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:26:15]   Extracting signatures...
+[2026-03-14 17:26:15]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:26:15]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:26:15]     ideal k=8: union=290/511 (57%), 37248 tokens
+[2026-03-14 17:26:19]     ideal k=16: union=393/511 (77%), 50406 tokens
+[2026-03-14 17:26:26]     ideal k=32: union=455/511 (89%), 58342 tokens
+[2026-03-14 17:26:33]     si_5bit_20pm k=8: union=285/511 (56%), 36582 tokens
+[2026-03-14 17:26:38]     si_5bit_20pm k=16: union=395/511 (77%), 50662 tokens
+[2026-03-14 17:26:44]     si_5bit_20pm k=32: union=455/511 (89%), 58342 tokens
+[2026-03-14 17:26:52]     si_4bit_30pm k=8: union=295/511 (58%), 37862 tokens
+[2026-03-14 17:26:56]     si_4bit_30pm k=16: union=391/511 (77%), 50176 tokens
+[2026-03-14 17:27:03]     si_4bit_30pm k=32: union=453/511 (89%), 58086 tokens
+[2026-03-14 17:27:10]     si_5bit_10pm k=8: union=287/511 (56%), 36864 tokens
+[2026-03-14 17:27:15]     si_5bit_10pm k=16: union=390/511 (76%), 50022 tokens
+[2026-03-14 17:27:21]     si_5bit_10pm k=32: union=457/511 (89%), 58598 tokens
+[2026-03-14 17:27:28]   [54/66] ctx=64K pos=90%: full=HIT (110.3s) VRAM=19.0GB
+[2026-03-14 17:27:29]   Chunked mode (ctx=65510, 511 blocks)
+[2026-03-14 17:27:29]   Chunked prefill: 65510 tokens, 16 chunks x 4096
+[2026-03-14 17:27:33]     chunk 4/16 (16384/65510) VRAM=16.2GB
+[2026-03-14 17:27:39]     chunk 8/16 (32768/65510) VRAM=17.1GB
+[2026-03-14 17:27:47]     chunk 12/16 (49152/65510) VRAM=18.1GB
+[2026-03-14 17:27:57]     chunk 16/16 (65510/65510) VRAM=19.0GB
+[2026-03-14 17:27:57]   Prefill done. VRAM=19.0GB. Generating...
+[2026-03-14 17:28:05]   Generate done: HIT. VRAM=19.0GB
+[2026-03-14 17:28:05]   Extracting signatures...
+[2026-03-14 17:28:05]   Signatures done. VRAM=19.0GB
+[2026-03-14 17:28:05]   Full cache retained for sparse eval. VRAM=19.0GB
+[2026-03-14 17:28:05]     ideal k=8: union=289/511 (57%), 37094 tokens
+[2026-03-14 17:28:10]     ideal k=16: union=378/511 (74%), 48486 tokens
+[2026-03-14 17:28:16]     ideal k=32: union=454/511 (89%), 58214 tokens
+[2026-03-14 17:28:23]     si_5bit_20pm k=8: union=290/511 (57%), 37248 tokens
+[2026-03-14 17:28:28]     si_5bit_20pm k=16: union=385/511 (75%), 49382 tokens
+[2026-03-14 17:28:34]     si_5bit_20pm k=32: union=458/511 (90%), 58726 tokens
+[2026-03-14 17:28:42]     si_4bit_30pm k=8: union=306/511 (60%), 39296 tokens
+[2026-03-14 17:28:47]     si_4bit_30pm k=16: union=384/511 (75%), 49254 tokens
+[2026-03-14 17:28:53]     si_4bit_30pm k=32: union=461/511 (90%), 59110 tokens
+[2026-03-14 17:29:00]     si_5bit_10pm k=8: union=296/511 (58%), 38016 tokens
+[2026-03-14 17:29:05]     si_5bit_10pm k=16: union=383/511 (75%), 49126 tokens
+[2026-03-14 17:29:11]     si_5bit_10pm k=32: union=458/511 (90%), 58726 tokens
+[2026-03-14 17:29:19]   [55/66] ctx=64K pos=95%: full=HIT (110.2s) VRAM=19.0GB
+[2026-03-14 17:29:19] 
+  >> ctx=64K: full=100.0%
+[2026-03-14 17:29:19]      ideal k=8: 45.5%
+[2026-03-14 17:29:19]      ideal k=16: 72.7%
+[2026-03-14 17:29:19]      ideal k=32: 100.0%
+[2026-03-14 17:29:19]      si_5bit_20pm k=8: 45.5%
+[2026-03-14 17:29:19]      si_5bit_20pm k=16: 72.7%
+[2026-03-14 17:29:19]      si_5bit_20pm k=32: 100.0%
+[2026-03-14 17:29:19]      si_4bit_30pm k=8: 36.4%
+[2026-03-14 17:29:19]      si_4bit_30pm k=16: 72.7%
+[2026-03-14 17:29:19]      si_4bit_30pm k=32: 100.0%
+[2026-03-14 17:29:19]      si_5bit_10pm k=8: 45.5%
+[2026-03-14 17:29:19]      si_5bit_10pm k=16: 72.7%
+[2026-03-14 17:29:19]      si_5bit_10pm k=32: 100.0%
+[2026-03-14 17:29:19]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 17:29:19] 
+============================================================
+[2026-03-14 17:29:19] Context: 131072 tokens (128K)
+[2026-03-14 17:29:19] ============================================================
+[2026-03-14 17:29:19]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:29:19]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:29:24]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:29:30]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:29:37]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:29:47]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:29:58]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:30:11]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:30:26]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:30:44]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:30:44]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:31:01]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:31:01]   Extracting signatures...
+[2026-03-14 17:31:02]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:31:02]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:31:02]     ideal k=8: union=396/1023 (39%), 50790 tokens
+[2026-03-14 17:31:08]     ideal k=16: union=575/1023 (56%), 73702 tokens
+[2026-03-14 17:31:18]     ideal k=32: union=769/1023 (75%), 98534 tokens
+[2026-03-14 17:31:32]     si_5bit_20pm k=8: union=391/1023 (38%), 50150 tokens
+[2026-03-14 17:31:38]     si_5bit_20pm k=16: union=587/1023 (57%), 75238 tokens
+[2026-03-14 17:31:49]     si_5bit_20pm k=32: union=789/1023 (77%), 101094 tokens
+[2026-03-14 17:32:03]     si_4bit_30pm k=8: union=418/1023 (41%), 53606 tokens
+[2026-03-14 17:32:10]     si_4bit_30pm k=16: union=602/1023 (59%), 77158 tokens
+[2026-03-14 17:32:16]     si_4bit_30pm k=32: union=792/1023 (77%), 101478 tokens
+[2026-03-14 17:32:30]     si_5bit_10pm k=8: union=404/1023 (39%), 51814 tokens
+[2026-03-14 17:32:36]     si_5bit_10pm k=16: union=594/1023 (58%), 76134 tokens
+[2026-03-14 17:32:42]     si_5bit_10pm k=32: union=771/1023 (75%), 98790 tokens
+[2026-03-14 17:32:56]   [56/66] ctx=128K pos=5%: full=MISS (217.3s) VRAM=22.8GB
+[2026-03-14 17:32:56]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:32:56]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:33:01]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:33:07]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:33:15]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:33:24]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:33:35]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:33:48]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:34:04]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:34:22]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:34:22]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:34:39]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:34:39]   Extracting signatures...
+[2026-03-14 17:34:40]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:34:40]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:34:40]     ideal k=8: union=407/1023 (40%), 52198 tokens
+[2026-03-14 17:34:44]     ideal k=16: union=587/1023 (57%), 75238 tokens
+[2026-03-14 17:34:55]     ideal k=32: union=775/1023 (76%), 99302 tokens
+[2026-03-14 17:35:09]     si_5bit_20pm k=8: union=405/1023 (40%), 51942 tokens
+[2026-03-14 17:35:13]     si_5bit_20pm k=16: union=592/1023 (58%), 75878 tokens
+[2026-03-14 17:35:24]     si_5bit_20pm k=32: union=774/1023 (76%), 99174 tokens
+[2026-03-14 17:35:38]     si_4bit_30pm k=8: union=407/1023 (40%), 52198 tokens
+[2026-03-14 17:35:42]     si_4bit_30pm k=16: union=593/1023 (58%), 76006 tokens
+[2026-03-14 17:35:52]     si_4bit_30pm k=32: union=794/1023 (78%), 101734 tokens
+[2026-03-14 17:36:07]     si_5bit_10pm k=8: union=415/1023 (41%), 53222 tokens
+[2026-03-14 17:36:11]     si_5bit_10pm k=16: union=590/1023 (58%), 75622 tokens
+[2026-03-14 17:36:22]     si_5bit_10pm k=32: union=771/1023 (75%), 98790 tokens
+[2026-03-14 17:36:35]   [57/66] ctx=128K pos=10%: full=MISS (218.9s) VRAM=22.8GB
+[2026-03-14 17:36:36]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:36:36]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:36:40]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:36:46]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:36:54]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:37:03]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:37:14]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:37:27]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:37:43]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:38:01]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:38:01]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:38:19]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:38:19]   Extracting signatures...
+[2026-03-14 17:38:19]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:38:19]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:38:19]     ideal k=8: union=409/1023 (40%), 52454 tokens
+[2026-03-14 17:38:23]     ideal k=16: union=582/1023 (57%), 74598 tokens
+[2026-03-14 17:38:34]     ideal k=32: union=770/1023 (75%), 98662 tokens
+[2026-03-14 17:38:48]     si_5bit_20pm k=8: union=409/1023 (40%), 52454 tokens
+[2026-03-14 17:38:54]     si_5bit_20pm k=16: union=583/1023 (57%), 74726 tokens
+[2026-03-14 17:39:05]     si_5bit_20pm k=32: union=775/1023 (76%), 99302 tokens
+[2026-03-14 17:39:19]     si_4bit_30pm k=8: union=409/1023 (40%), 52454 tokens
+[2026-03-14 17:39:26]     si_4bit_30pm k=16: union=608/1023 (59%), 77926 tokens
+[2026-03-14 17:39:37]     si_4bit_30pm k=32: union=779/1023 (76%), 99814 tokens
+[2026-03-14 17:39:51]     si_5bit_10pm k=8: union=413/1023 (40%), 52966 tokens
+[2026-03-14 17:39:57]     si_5bit_10pm k=16: union=587/1023 (57%), 75238 tokens
+[2026-03-14 17:40:08]     si_5bit_10pm k=32: union=775/1023 (76%), 99302 tokens
+[2026-03-14 17:40:22]   [58/66] ctx=128K pos=20%: full=MISS (226.1s) VRAM=22.8GB
+[2026-03-14 17:40:22]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:40:22]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:40:27]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:40:32]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:40:40]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:40:49]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:41:00]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:41:13]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:41:29]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:41:48]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:41:48]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:42:05]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:42:05]   Extracting signatures...
+[2026-03-14 17:42:06]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:42:06]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:42:06]     ideal k=8: union=412/1023 (40%), 52838 tokens
+[2026-03-14 17:42:10]     ideal k=16: union=595/1023 (58%), 76262 tokens
+[2026-03-14 17:42:21]     ideal k=32: union=776/1023 (76%), 99430 tokens
+[2026-03-14 17:42:35]     si_5bit_20pm k=8: union=410/1023 (40%), 52582 tokens
+[2026-03-14 17:42:41]     si_5bit_20pm k=16: union=590/1023 (58%), 75622 tokens
+[2026-03-14 17:42:52]     si_5bit_20pm k=32: union=776/1023 (76%), 99430 tokens
+[2026-03-14 17:43:06]     si_4bit_30pm k=8: union=412/1023 (40%), 52838 tokens
+[2026-03-14 17:43:12]     si_4bit_30pm k=16: union=588/1023 (57%), 75366 tokens
+[2026-03-14 17:43:23]     si_4bit_30pm k=32: union=789/1023 (77%), 101094 tokens
+[2026-03-14 17:43:37]     si_5bit_10pm k=8: union=416/1023 (41%), 53350 tokens
+[2026-03-14 17:43:41]     si_5bit_10pm k=16: union=593/1023 (58%), 76006 tokens
+[2026-03-14 17:43:52]     si_5bit_10pm k=32: union=772/1023 (75%), 98918 tokens
+[2026-03-14 17:44:06]   [59/66] ctx=128K pos=30%: full=MISS (224.1s) VRAM=22.8GB
+[2026-03-14 17:44:06]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:44:06]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:44:11]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:44:17]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:44:24]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:44:34]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:44:45]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:44:58]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:45:14]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:45:33]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:45:33]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:45:50]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:45:50]   Extracting signatures...
+[2026-03-14 17:45:50]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:45:50]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:45:51]     ideal k=8: union=400/1023 (39%), 51302 tokens
+[2026-03-14 17:45:55]     ideal k=16: union=576/1023 (56%), 73830 tokens
+[2026-03-14 17:46:01]     ideal k=32: union=778/1023 (76%), 99686 tokens
+[2026-03-14 17:46:15]     si_5bit_20pm k=8: union=391/1023 (38%), 50150 tokens
+[2026-03-14 17:46:19]     si_5bit_20pm k=16: union=578/1023 (57%), 74086 tokens
+[2026-03-14 17:46:26]     si_5bit_20pm k=32: union=766/1023 (75%), 98150 tokens
+[2026-03-14 17:46:39]     si_4bit_30pm k=8: union=413/1023 (40%), 52966 tokens
+[2026-03-14 17:46:43]     si_4bit_30pm k=16: union=590/1023 (58%), 75622 tokens
+[2026-03-14 17:46:50]     si_4bit_30pm k=32: union=770/1023 (75%), 98662 tokens
+[2026-03-14 17:47:03]     si_5bit_10pm k=8: union=397/1023 (39%), 50918 tokens
+[2026-03-14 17:47:07]     si_5bit_10pm k=16: union=580/1023 (57%), 74342 tokens
+[2026-03-14 17:47:13]     si_5bit_10pm k=32: union=776/1023 (76%), 99430 tokens
+[2026-03-14 17:47:27]   [60/66] ctx=128K pos=40%: full=MISS (200.9s) VRAM=22.8GB
+[2026-03-14 17:47:27]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:47:27]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:47:32]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:47:38]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:47:45]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:47:55]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:48:06]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:48:19]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:48:34]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:48:53]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:48:53]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:49:11]   Generate done: MISS. VRAM=22.8GB
+[2026-03-14 17:49:11]   Extracting signatures...
+[2026-03-14 17:49:11]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:49:11]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:49:11]     ideal k=8: union=386/1023 (38%), 49536 tokens
+[2026-03-14 17:49:15]     ideal k=16: union=542/1023 (53%), 69478 tokens
+[2026-03-14 17:49:25]     ideal k=32: union=730/1023 (71%), 93542 tokens
+[2026-03-14 17:49:38]     si_5bit_20pm k=8: union=379/1023 (37%), 48640 tokens
+[2026-03-14 17:49:42]     si_5bit_20pm k=16: union=557/1023 (54%), 71398 tokens
+[2026-03-14 17:49:52]     si_5bit_20pm k=32: union=731/1023 (71%), 93670 tokens
+[2026-03-14 17:50:05]     si_4bit_30pm k=8: union=383/1023 (37%), 49152 tokens
+[2026-03-14 17:50:11]     si_4bit_30pm k=16: union=569/1023 (56%), 72960 tokens
+[2026-03-14 17:50:21]     si_4bit_30pm k=32: union=737/1023 (72%), 94438 tokens
+[2026-03-14 17:50:35]     si_5bit_10pm k=8: union=391/1023 (38%), 50176 tokens
+[2026-03-14 17:50:39]     si_5bit_10pm k=16: union=551/1023 (54%), 70630 tokens
+[2026-03-14 17:50:45]     si_5bit_10pm k=32: union=728/1023 (71%), 93286 tokens
+[2026-03-14 17:50:58]   [61/66] ctx=128K pos=50%: full=MISS (210.6s) VRAM=22.8GB
+[2026-03-14 17:50:58]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:50:58]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:51:03]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:51:09]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:51:16]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:51:26]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:51:37]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:51:50]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:52:05]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:52:24]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:52:24]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:52:41]   Generate done: HIT. VRAM=22.8GB
+[2026-03-14 17:52:41]   Extracting signatures...
+[2026-03-14 17:52:41]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:52:42]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:52:42]     ideal k=8: union=412/1023 (40%), 52864 tokens
+[2026-03-14 17:52:48]     ideal k=16: union=582/1023 (57%), 74598 tokens
+[2026-03-14 17:52:59]     ideal k=32: union=762/1023 (74%), 97638 tokens
+[2026-03-14 17:53:12]     si_5bit_20pm k=8: union=398/1023 (39%), 51072 tokens
+[2026-03-14 17:53:19]     si_5bit_20pm k=16: union=586/1023 (57%), 75110 tokens
+[2026-03-14 17:53:29]     si_5bit_20pm k=32: union=767/1023 (75%), 98278 tokens
+[2026-03-14 17:53:43]     si_4bit_30pm k=8: union=421/1023 (41%), 54016 tokens
+[2026-03-14 17:53:50]     si_4bit_30pm k=16: union=600/1023 (59%), 76928 tokens
+[2026-03-14 17:54:01]     si_4bit_30pm k=32: union=773/1023 (76%), 99046 tokens
+[2026-03-14 17:54:15]     si_5bit_10pm k=8: union=407/1023 (40%), 52198 tokens
+[2026-03-14 17:54:21]     si_5bit_10pm k=16: union=589/1023 (58%), 75494 tokens
+[2026-03-14 17:54:32]     si_5bit_10pm k=32: union=772/1023 (75%), 98918 tokens
+[2026-03-14 17:54:46]   [62/66] ctx=128K pos=60%: full=HIT (227.6s) VRAM=22.8GB
+[2026-03-14 17:54:46]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:54:46]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:54:51]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:54:56]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:55:04]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:55:13]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:55:25]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:55:38]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:55:54]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 17:56:12]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 17:56:12]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 17:56:30]   Generate done: HIT. VRAM=22.8GB
+[2026-03-14 17:56:30]   Extracting signatures...
+[2026-03-14 17:56:30]   Signatures done. VRAM=22.8GB
+[2026-03-14 17:56:30]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 17:56:30]     ideal k=8: union=404/1023 (39%), 51840 tokens
+[2026-03-14 17:56:35]     ideal k=16: union=584/1023 (57%), 74880 tokens
+[2026-03-14 17:56:46]     ideal k=32: union=762/1023 (74%), 97638 tokens
+[2026-03-14 17:57:00]     si_5bit_20pm k=8: union=397/1023 (39%), 50944 tokens
+[2026-03-14 17:57:10]     si_5bit_20pm k=16: union=596/1023 (58%), 76390 tokens
+[2026-03-14 17:57:18]     si_5bit_20pm k=32: union=767/1023 (75%), 98278 tokens
+[2026-03-14 17:57:32]     si_4bit_30pm k=8: union=410/1023 (40%), 52608 tokens
+[2026-03-14 17:57:39]     si_4bit_30pm k=16: union=590/1023 (58%), 75648 tokens
+[2026-03-14 17:57:49]     si_4bit_30pm k=32: union=779/1023 (76%), 99814 tokens
+[2026-03-14 17:58:03]     si_5bit_10pm k=8: union=401/1023 (39%), 51456 tokens
+[2026-03-14 17:58:09]     si_5bit_10pm k=16: union=582/1023 (57%), 74624 tokens
+[2026-03-14 17:58:19]     si_5bit_10pm k=32: union=775/1023 (76%), 99302 tokens
+[2026-03-14 17:58:33]   [63/66] ctx=128K pos=70%: full=HIT (227.1s) VRAM=22.8GB
+[2026-03-14 17:58:33]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 17:58:33]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 17:58:38]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 17:58:44]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 17:58:51]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 17:59:01]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 17:59:12]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 17:59:25]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 17:59:41]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 18:00:00]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 18:00:00]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 18:00:17]   Generate done: HIT. VRAM=22.8GB
+[2026-03-14 18:00:17]   Extracting signatures...
+[2026-03-14 18:00:17]   Signatures done. VRAM=22.8GB
+[2026-03-14 18:00:17]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 18:00:17]     ideal k=8: union=397/1023 (39%), 50944 tokens
+[2026-03-14 18:00:24]     ideal k=16: union=585/1023 (57%), 74982 tokens
+[2026-03-14 18:00:34]     ideal k=32: union=769/1023 (75%), 98534 tokens
+[2026-03-14 18:00:48]     si_5bit_20pm k=8: union=398/1023 (39%), 51072 tokens
+[2026-03-14 18:00:53]     si_5bit_20pm k=16: union=595/1023 (58%), 76288 tokens
+[2026-03-14 18:01:03]     si_5bit_20pm k=32: union=773/1023 (76%), 99046 tokens
+[2026-03-14 18:01:17]     si_4bit_30pm k=8: union=413/1023 (40%), 52992 tokens
+[2026-03-14 18:01:22]     si_4bit_30pm k=16: union=601/1023 (59%), 77056 tokens
+[2026-03-14 18:01:33]     si_4bit_30pm k=32: union=773/1023 (76%), 99046 tokens
+[2026-03-14 18:01:47]     si_5bit_10pm k=8: union=396/1023 (39%), 50816 tokens
+[2026-03-14 18:01:52]     si_5bit_10pm k=16: union=583/1023 (57%), 74752 tokens
+[2026-03-14 18:02:02]     si_5bit_10pm k=32: union=766/1023 (75%), 98150 tokens
+[2026-03-14 18:02:16]   [64/66] ctx=128K pos=80%: full=HIT (222.8s) VRAM=22.8GB
+[2026-03-14 18:02:16]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 18:02:16]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 18:02:21]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 18:02:27]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 18:02:34]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 18:02:44]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 18:02:55]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 18:03:08]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 18:03:24]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 18:03:42]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 18:03:42]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 18:04:00]   Generate done: HIT. VRAM=22.8GB
+[2026-03-14 18:04:00]   Extracting signatures...
+[2026-03-14 18:04:00]   Signatures done. VRAM=22.8GB
+[2026-03-14 18:04:00]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 18:04:00]     ideal k=8: union=402/1023 (39%), 51584 tokens
+[2026-03-14 18:04:07]     ideal k=16: union=573/1023 (56%), 73472 tokens
+[2026-03-14 18:04:17]     ideal k=32: union=756/1023 (74%), 96870 tokens
+[2026-03-14 18:04:30]     si_5bit_20pm k=8: union=396/1023 (39%), 50816 tokens
+[2026-03-14 18:04:37]     si_5bit_20pm k=16: union=576/1023 (56%), 73830 tokens
+[2026-03-14 18:04:47]     si_5bit_20pm k=32: union=762/1023 (74%), 97638 tokens
+[2026-03-14 18:05:01]     si_4bit_30pm k=8: union=411/1023 (40%), 52736 tokens
+[2026-03-14 18:05:07]     si_4bit_30pm k=16: union=593/1023 (58%), 76032 tokens
+[2026-03-14 18:05:18]     si_4bit_30pm k=32: union=778/1023 (76%), 99712 tokens
+[2026-03-14 18:05:32]     si_5bit_10pm k=8: union=388/1023 (38%), 49792 tokens
+[2026-03-14 18:05:38]     si_5bit_10pm k=16: union=578/1023 (57%), 74112 tokens
+[2026-03-14 18:05:49]     si_5bit_10pm k=32: union=766/1023 (75%), 98150 tokens
+[2026-03-14 18:06:02]   [65/66] ctx=128K pos=90%: full=HIT (226.2s) VRAM=22.8GB
+[2026-03-14 18:06:03]   Chunked mode (ctx=131046, 1023 blocks)
+[2026-03-14 18:06:03]   Chunked prefill: 131046 tokens, 32 chunks x 4096
+[2026-03-14 18:06:07]     chunk 4/32 (16384/131046) VRAM=16.2GB
+[2026-03-14 18:06:13]     chunk 8/32 (32768/131046) VRAM=17.1GB
+[2026-03-14 18:06:21]     chunk 12/32 (49152/131046) VRAM=18.1GB
+[2026-03-14 18:06:30]     chunk 16/32 (65536/131046) VRAM=19.0GB
+[2026-03-14 18:06:41]     chunk 20/32 (81920/131046) VRAM=20.0GB
+[2026-03-14 18:06:54]     chunk 24/32 (98304/131046) VRAM=20.9GB
+[2026-03-14 18:07:10]     chunk 28/32 (114688/131046) VRAM=21.8GB
+[2026-03-14 18:07:29]     chunk 32/32 (131046/131046) VRAM=22.8GB
+[2026-03-14 18:07:29]   Prefill done. VRAM=22.8GB. Generating...
+[2026-03-14 18:07:46]   Generate done: HIT. VRAM=22.8GB
+[2026-03-14 18:07:46]   Extracting signatures...
+[2026-03-14 18:07:47]   Signatures done. VRAM=22.8GB
+[2026-03-14 18:07:47]   Full cache retained for sparse eval. VRAM=22.8GB
+[2026-03-14 18:07:47]     ideal k=8: union=402/1023 (39%), 51584 tokens
+[2026-03-14 18:07:51]     ideal k=16: union=589/1023 (58%), 75520 tokens
+[2026-03-14 18:08:02]     ideal k=32: union=764/1023 (75%), 97894 tokens
+[2026-03-14 18:08:16]     si_5bit_20pm k=8: union=404/1023 (39%), 51840 tokens
+[2026-03-14 18:08:21]     si_5bit_20pm k=16: union=577/1023 (56%), 73984 tokens
+[2026-03-14 18:08:31]     si_5bit_20pm k=32: union=776/1023 (76%), 99430 tokens
+[2026-03-14 18:08:36]     si_4bit_30pm k=8: union=408/1023 (40%), 52352 tokens
+[2026-03-14 18:08:41]     si_4bit_30pm k=16: union=581/1023 (57%), 74496 tokens
+[2026-03-14 18:08:45]     si_4bit_30pm k=32: union=779/1023 (76%), 99814 tokens
+[2026-03-14 18:08:59]     si_5bit_10pm k=8: union=398/1023 (39%), 51072 tokens
+[2026-03-14 18:09:03]     si_5bit_10pm k=16: union=582/1023 (57%), 74624 tokens
+[2026-03-14 18:09:07]     si_5bit_10pm k=32: union=768/1023 (75%), 98406 tokens
+[2026-03-14 18:09:12]   [66/66] ctx=128K pos=95%: full=HIT (189.2s) VRAM=22.8GB
+[2026-03-14 18:09:12] 
+  >> ctx=128K: full=45.5%
+[2026-03-14 18:09:12]      ideal k=8: 27.3%
+[2026-03-14 18:09:12]      ideal k=16: 27.3%
+[2026-03-14 18:09:12]      ideal k=32: 18.2%
+[2026-03-14 18:09:12]      si_5bit_20pm k=8: 27.3%
+[2026-03-14 18:09:12]      si_5bit_20pm k=16: 18.2%
+[2026-03-14 18:09:12]      si_5bit_20pm k=32: 27.3%
+[2026-03-14 18:09:12]      si_4bit_30pm k=8: 27.3%
+[2026-03-14 18:09:12]      si_4bit_30pm k=16: 27.3%
+[2026-03-14 18:09:12]      si_4bit_30pm k=32: 27.3%
+[2026-03-14 18:09:12]      si_5bit_10pm k=8: 27.3%
+[2026-03-14 18:09:12]      si_5bit_10pm k=16: 18.2%
+[2026-03-14 18:09:12]      si_5bit_10pm k=32: 27.3%
+[2026-03-14 18:09:12]   (intermediate save: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json)
+[2026-03-14 18:09:12] 
+============================================================
+[2026-03-14 18:09:12] SUMMARY -- NIAH v2 (SDPA, SOI Si)
+[2026-03-14 18:09:12] ============================================================
+[2026-03-14 18:09:12] 
+ctx=4K: full=100.0%
+[2026-03-14 18:09:12]   ideal k=8: 100.0%
+[2026-03-14 18:09:12]   ideal k=16: 100.0%
+[2026-03-14 18:09:12]   ideal k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 100.0%
+[2026-03-14 18:09:12] 
+ctx=8K: full=100.0%
+[2026-03-14 18:09:12]   ideal k=8: 100.0%
+[2026-03-14 18:09:12]   ideal k=16: 100.0%
+[2026-03-14 18:09:12]   ideal k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 100.0%
+[2026-03-14 18:09:12] 
+ctx=16K: full=100.0%
+[2026-03-14 18:09:12]   ideal k=8: 90.9%
+[2026-03-14 18:09:12]   ideal k=16: 100.0%
+[2026-03-14 18:09:12]   ideal k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 90.9%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 90.9%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 90.9%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 100.0%
+[2026-03-14 18:09:12] 
+ctx=32K: full=100.0%
+[2026-03-14 18:09:12]   ideal k=8: 63.6%
+[2026-03-14 18:09:12]   ideal k=16: 81.8%
+[2026-03-14 18:09:12]   ideal k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 72.7%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 90.9%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 72.7%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 90.9%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 63.6%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 90.9%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 100.0%
+[2026-03-14 18:09:12] 
+ctx=64K: full=100.0%
+[2026-03-14 18:09:12]   ideal k=8: 45.5%
+[2026-03-14 18:09:12]   ideal k=16: 72.7%
+[2026-03-14 18:09:12]   ideal k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 45.5%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 72.7%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 36.4%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 72.7%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 100.0%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 45.5%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 72.7%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 100.0%
+[2026-03-14 18:09:12] 
+ctx=128K: full=45.5%
+[2026-03-14 18:09:12]   ideal k=8: 27.3%
+[2026-03-14 18:09:12]   ideal k=16: 27.3%
+[2026-03-14 18:09:12]   ideal k=32: 18.2%
+[2026-03-14 18:09:12]   si_5bit_20pm k=8: 27.3%
+[2026-03-14 18:09:12]   si_5bit_20pm k=16: 18.2%
+[2026-03-14 18:09:12]   si_5bit_20pm k=32: 27.3%
+[2026-03-14 18:09:12]   si_4bit_30pm k=8: 27.3%
+[2026-03-14 18:09:12]   si_4bit_30pm k=16: 27.3%
+[2026-03-14 18:09:12]   si_4bit_30pm k=32: 27.3%
+[2026-03-14 18:09:12]   si_5bit_10pm k=8: 27.3%
+[2026-03-14 18:09:12]   si_5bit_10pm k=16: 18.2%
+[2026-03-14 18:09:12]   si_5bit_10pm k=32: 27.3%
+[2026-03-14 18:09:12] 
+Saved: C:\Users\admin\PRISM\results\downstream\mrr_niah_v2b.json
+[2026-03-14 18:09:12] DONE!

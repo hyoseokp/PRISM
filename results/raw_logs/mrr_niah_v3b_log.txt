@@ -1,0 +1,107 @@
+[2026-03-14 18:33:18] Text file: 155851 chars
+[2026-03-14 18:33:18] Loaded R_h from ctx=8192
+[2026-03-14 18:33:18] Retrieval heads: 102/112 (91.1%)
+[2026-03-14 18:33:18] Loading Qwen/Qwen2.5-7B with YaRN for 1M context...
+[2026-03-14 18:33:18]   YaRN scaling: factor=8.0 (131072 -> 1048576), rope_theta=1000000.0
+[2026-03-14 18:33:28] Arch: 28L 28AH 4KVH G=7 hd=128
+[2026-03-14 18:33:28] VRAM after load: 15.2 GB
+[2026-03-14 18:33:28] Base tokens: 39541
+[2026-03-14 18:33:28] 
+============================================================
+[2026-03-14 18:33:28] NIAH v3b: 1M context (OffloadedCache + physical token selection)
+[2026-03-14 18:33:28] ============================================================
+[2026-03-14 18:33:28] Text repeated 27x for 1048533 tokens (1.05M)
+[2026-03-14 18:33:28] Target: 1048576 tokens (1024K), 8192 blocks
+[2026-03-14 18:33:28] Positions: [0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95]
+[2026-03-14 18:33:28] 
+============================================================
+[2026-03-14 18:33:28] Position 1/10: needle at 5%
+[2026-03-14 18:33:28] ============================================================
+[2026-03-14 18:33:28]   actual_len=1048550, n_blocks=8191
+[2026-03-14 18:33:28]   [Phase 1] Chunked prefill...
+[2026-03-14 18:33:28]   Chunked prefill: 1048550 tokens, 256 chunks x 4096
+[2026-03-14 18:33:38]     chunk 8/256 (32768/1048550) VRAM=16.6GB peak=19.9GB
+[2026-03-14 18:33:53]     chunk 16/256 (65536/1048550) VRAM=16.6GB peak=19.9GB
+[2026-03-14 18:34:15]     chunk 24/256 (98304/1048550) VRAM=16.7GB peak=19.9GB
+[2026-03-14 18:34:44]     chunk 32/256 (131072/1048550) VRAM=16.8GB peak=20.7GB
+[2026-03-14 18:35:21]     chunk 40/256 (163840/1048550) VRAM=16.8GB peak=21.7GB
+[2026-03-14 18:36:07]     chunk 48/256 (196608/1048550) VRAM=16.9GB peak=22.7GB
+[2026-03-14 18:37:02]     chunk 56/256 (229376/1048550) VRAM=17.0GB peak=23.7GB
+[2026-03-14 18:38:05]     chunk 64/256 (262144/1048550) VRAM=17.0GB peak=24.7GB
+[2026-03-14 18:38:08] FATAL ERROR: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2026-03-14 18:38:08] Traceback (most recent call last):
+  File "C:\Users\admin\PRISM\scripts\run_mrr_niah_v3b.py", line 489, in main
+    _run(chunk_size_override=4096)
+  File "C:\Users\admin\PRISM\scripts\run_mrr_niah_v3b.py", line 347, in _run
+    cache, last_logits = chunked_prefill(model, ids, CHUNK_SIZE)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\PRISM\scripts\run_mrr_niah_v3b.py", line 72, in chunked_prefill
+    outputs = model(
+              ^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\utils\generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 476, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\utils\generic.py", line 917, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\utils\output_capturing.py", line 253, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 411, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 298, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 228, in forward
+    key_states, value_states = past_key_values.update(key_states, value_states, self.layer_idx, cache_kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\cache_utils.py", line 795, in update
+    self.offload(layer_idx, self.only_non_sliding)
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\cache_utils.py", line 756, in offload
+    self.layers[layer_idx].offload()
+  File "C:\Users\admin\miniconda3\envs\gpu\Lib\site-packages\transformers\cache_utils.py", line 60, in offload
+    self.keys = self.keys.to("cpu", non_blocking=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
