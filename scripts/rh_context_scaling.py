@@ -1,25 +1,88 @@
-"""Figure: R_h vs Context Length (retrieval head fraction scaling)."""
+"""Figure: R_h vs Context Length (retrieval head fraction scaling).
+Reads measured data from results/retrieval_heads/*.json."""
 
 import os
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 from plot_config import (OUT_DIR, COLOR_PRIMARY, COLOR_QUATERNARY,
                          COLOR_QUINARY, COLOR_THRESHOLD)
 
+RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results', 'retrieval_heads')
+
+
+def load_qwen25_bf16():
+    path = os.path.join(RESULTS_DIR, 'qwen25_7b_bf16_128k.json')
+    with open(path) as f:
+        d = json.load(f)
+    ctxs, pcts, means = [], [], []
+    for ctx_str in sorted((k for k in d if k.isdigit()), key=int):
+        r = d[ctx_str]
+        ctx = int(ctx_str)
+        m = np.array(r['rh_matrix'])
+        pct = 100 * (m > 0.3).sum() / m.size
+        ctxs.append(ctx)
+        pcts.append(round(pct, 1))
+        means.append(round(float(m.mean()), 4))
+    # Add 256K from extreme results if available
+    ext_path = os.path.join(RESULTS_DIR, 'qwen25_7b_bf16_extreme.json')
+    if os.path.exists(ext_path):
+        with open(ext_path) as f:
+            ext = json.load(f)
+        if 'contexts' in ext:
+            for ctx_str, r in ext['contexts'].items():
+                ctx = int(ctx_str)
+                if ctx not in ctxs:
+                    ctxs.append(ctx)
+                    pcts.append(r.get('rh_pct', 0))
+                    means.append(r.get('mean_rh', 0))
+    return ctxs, pcts, means
+
+
+def load_qwen3_bf16():
+    path = os.path.join(RESULTS_DIR, 'step2_q3_rh.json')
+    with open(path) as f:
+        d = json.load(f)
+    ctxs, pcts = [], []
+    for ctx_str in sorted((k for k in d if k.isdigit()), key=int):
+        r = d[ctx_str]
+        ctx = int(ctx_str)
+        if 'rh_matrix' in r:
+            m = np.array(r['rh_matrix'])
+            pct = 100 * (m > 0.3).sum() / m.size
+        elif 'pct_t03' in r:
+            pct = r['pct_t03']
+        else:
+            continue
+        ctxs.append(ctx)
+        pcts.append(round(pct, 1))
+    return ctxs, pcts
+
+
+def load_qwen25_4bit():
+    path = os.path.join(RESULTS_DIR, 'step1_q25_rh.json')
+    with open(path) as f:
+        d = json.load(f)
+    ctxs, pcts = [], []
+    for ctx_str in sorted((k for k in d if k.isdigit()), key=int):
+        r = d[ctx_str]
+        ctx = int(ctx_str)
+        if 'rh_matrix' in r:
+            m = np.array(r['rh_matrix'])
+            pct = 100 * (m > 0.3).sum() / m.size
+        elif 'pct_t03' in r:
+            pct = r['pct_t03']
+        else:
+            continue
+        ctxs.append(ctx)
+        pcts.append(round(pct, 1))
+    return ctxs, pcts
+
 
 def main():
-    # Qwen2.5-7B bf16
-    bf16_ctx   = [2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
-    bf16_pct   = [83.9, 83.0, 91.1, 92.9,  95.5,  92.0,  98.2,   99.1]
-    bf16_mean  = [0.574, 0.560, 0.627, 0.639, 0.656, 0.633, 0.796, 0.936]
-
-    # Qwen3-8B bf16
-    q3_ctx  = [2048, 4096, 8192]
-    q3_pct  = [86.5, 88.2, 89.6]
-
-    # Qwen2.5-7B 4-bit
-    q4_ctx  = [2048, 4096, 8192]
-    q4_pct  = [91.1, 90.2, 92.0]
+    bf16_ctx, bf16_pct, bf16_mean = load_qwen25_bf16()
+    q3_ctx, q3_pct = load_qwen3_bf16()
+    q4_ctx, q4_pct = load_qwen25_4bit()
 
     ctx_labels = {2048:'2K', 4096:'4K', 8192:'8K', 16384:'16K', 32768:'32K',
                   65536:'64K', 131072:'128K', 262144:'256K'}
@@ -47,7 +110,8 @@ def main():
     ax1.set_ylabel(r'Retrieval Head Fraction $R_h$ (%)')
     ax1.set_xlabel('Context Length (tokens)')
     ax1.set_xticks(bf16_ctx)
-    ax1.set_xticklabels([ctx_labels[c] for c in bf16_ctx], rotation=45, ha='right')
+    ax1.set_xticklabels([ctx_labels.get(c, str(c)) for c in bf16_ctx],
+                         rotation=45, ha='right')
     ax1.legend(loc='lower right')
     ax1.text(-0.12, 1.05, '(a)', transform=ax1.transAxes,
              fontsize=10, fontweight='bold')
@@ -63,7 +127,8 @@ def main():
     ax2.set_ylabel(r'Mean $\overline{R}_h$')
     ax2.set_xlabel('Context Length (tokens)')
     ax2.set_xticks(bf16_ctx)
-    ax2.set_xticklabels([ctx_labels[c] for c in bf16_ctx], rotation=45, ha='right')
+    ax2.set_xticklabels([ctx_labels.get(c, str(c)) for c in bf16_ctx],
+                         rotation=45, ha='right')
     ax2.legend(loc='upper left')
     ax2.text(-0.12, 1.05, '(b)', transform=ax2.transAxes,
              fontsize=10, fontweight='bold')
