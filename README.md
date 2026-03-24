@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/arXiv-under%20review-lightgrey.svg" alt="arXiv: under review">
+  <a href="https://doi.org/10.5281/zenodo.19198552"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.19198552.svg" alt="DOI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/PyTorch-CUDA-ee4c2c.svg" alt="PyTorch">
