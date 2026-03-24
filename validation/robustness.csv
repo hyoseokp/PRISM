@@ -1,0 +1,6 @@
+distribution,description,recall_mean,recall_std
+uniform_random,Uniform random (worst case),0.518,0.15190786681406593
+clustered,Clustered per block (best case),0.8839999999999999,0.3074800806556418
+mixed,"Mixed: 50% clustered, 50% random",0.592,0.21802752119858632
+power_law,Power-law distributed norms,0.4859999999999999,0.17664653973401231
+sparse,Sparse vectors (90% zeros),0.5539999999999999,0.16517869111964775
