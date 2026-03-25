@@ -53,3 +53,5 @@ arxiv_submission.tar.gz
 assets/*.log
 assets/*.aux
 patent/
+paper/main.tex
+paper/arxiv_prism_latest.tar.gz
