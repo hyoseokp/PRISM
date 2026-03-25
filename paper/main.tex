@@ -1,0 +1,135 @@
+% PRISM: Photonic Similarity Engine for KV Cache Block Selection in Long-Context LLM Inference
+% Format: Physical Review Letters (REVTeX 4.2)
+% Authors: Hyoseok Park, Yeonsang Park
+% Affiliation: Department of Physics, Chungnam National University
+
+\documentclass[pra,twocolumn,superscriptaddress,amsmath,amssymb,longbibliography,floatfix]{revtex4-2}
+
+% ── Packages ──────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+% Fix revtex4-2 + cleveref compatibility: revtex4-2 internally uses
+% \section* (unnumbered sections), causing cleveref to write an empty
+% label type to the .aux file ("cref reference format for label type
+% '' undefined").  Define cleveref formats for the empty-string type
+% so the lookup \csname cref@@format\endcsname succeeds.
+\makeatletter
+\expandafter\gdef\csname cref@@format\endcsname#1#2#3{#2Sec.~#1#3}
+\expandafter\gdef\csname Cref@@format\endcsname#1#2#3{#2Section~#1#3}
+\expandafter\gdef\csname crefrange@@format\endcsname#1#2#3#4#5#6{%
+  Secs.~#1#2 to~#4#5#6}
+\expandafter\gdef\csname Crefrange@@format\endcsname#1#2#3#4#5#6{%
+  Sections~#1#2 to~#4#5#6}
+\makeatother
+\crefformat{section}{#2Sec.~#1#3}
+\Crefformat{section}{#2Section~#1#3}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{placeins}   % \FloatBarrier to prevent figures drifting to end
+\usepackage{bibunits}
+\defaultbibliographystyle{apsrev4-2}
+
+% ── Custom commands ───────────────────────────────────────
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\prism}{\textsc{Prism}}
+
+% ══════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title ─────────────────────────────────────────────────
+\title{PRISM: Photonic Similarity Engine for KV Cache Block Selection\\in Long-Context LLM Inference}
+
+\author{Hyoseok Park}
+\affiliation{Department of Physics, Chungnam National University, Daejeon 34134, Republic of Korea}
+
+\author{Yeonsang Park}
+\affiliation{Department of Physics, Chungnam National University, Daejeon 34134, Republic of Korea}
+
+\date{\today}
+
+% ── Abstract ──────────────────────────────────────────────
+\begin{abstract}
+Long-context LLM inference is bottlenecked not by compute
+but by the memory bandwidth required to scan the KV cache
+at every decode step---a cost that grows linearly with context
+length.
+The semiconductor industry increasingly acknowledges this shift:
+NVIDIA's Vera Rubin architecture dedicates an entire DPU (ICMS)
+to KV cache management with flash-backed storage and
+hardware-assisted prefetch---an architectural bet confirming that
+memory, not arithmetic, is the first-class
+constraint.
+
+Recent photonic accelerators have demonstrated impressive
+throughput for dense attention
+computation.
+However, these approaches inherit the same $O(n)$ memory scaling
+as electronic attention when applied to long contexts.
+We observe that the real leverage point is the coarse
+block-selection step: a memory-bound similarity search that
+determines which KV blocks to fetch.
+We identify, for the first time, that this task is
+\emph{structurally matched} to the photonic broadcast-and-weight
+paradigm---the query fans out to all candidates via passive
+splitting, signatures are quasi-static (matching electro-optic
+MRR programming), and only rank order matters (relaxing precision
+to 4--6 bits).
+Crucially, the photonic advantage \emph{grows with context
+length}: as $N$ increases, the electronic scan cost rises
+linearly while the photonic evaluation remains $O(1)$.
+
+We instantiate this insight in \prism{}, a thin-film lithium
+niobate (TFLN) similarity engine.
+Hardware-impaired needle-in-a-haystack evaluation on Qwen2.5-7B
+confirms 100\% accuracy from 4K through 64K tokens at $k{=}32$,
+with $32\times$ traffic reduction.
+\prism{} achieves a four-order-of-magnitude energy advantage
+over GPU baselines at practical context lengths ($n \geq 4$K).
+\end{abstract}
+
+\maketitle
+
+% ══════════════════════════════════════════════════════════
+% MAIN TEXT (bibunit 1)
+% ══════════════════════════════════════════════════════════
+\begin{bibunit}
+
+% ── Section files ─────────────────────────────────────────
+\input{sections/introduction}           % 1. Introduction
+\input{sections/background}             % 2. Background
+\input{sections/architecture}           % 3. Photonic Retrieval Architecture
+\input{sections/hardware_analysis}      % 4. Photonic Hardware Analysis
+\input{sections/system_evaluation}      % 5. System-Level Evaluation
+\input{sections/scaling_analysis}       % 6. Photonic Scaling Analysis
+\input{sections/discussion}             % 7. Discussion
+\input{sections/conclusion}             % 8. Conclusion
+
+% ── References (main text) ───────────────────────────────
+\putbib[references]
+
+\end{bibunit}
+
+\clearpage  % Force supplementary to start on a new page
+
+% ══════════════════════════════════════════════════════════
+% SUPPLEMENTARY (bibunit 2)
+% ══════════════════════════════════════════════════════════
+\begin{bibunit}
+
+\input{sections/supplementary}
+
+% ── References (supplementary) ───────────────────────────
+\putbib[references]
+
+\end{bibunit}
+
+\end{document}
