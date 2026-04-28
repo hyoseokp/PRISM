@@ -194,7 +194,7 @@ PRISM uses time-division multiplexing: one chip (N_chip=1,024) serves 128 users 
 ## Chip Design
 
 <p align="center">
-  <img src="assets/fig_chip_layout_tikz.png" width="450"/>
+  <img src="assets/fig_chip_layout_tikz.png" width="720"/>
 </p>
 
 <p align="center">8x8 TFLN MRR weight bank. Scales to d=32, N=256 (single chip) or d=64, N=1024 (multi-chip).</p>
